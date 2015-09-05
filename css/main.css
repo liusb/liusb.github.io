@@ -1153,7 +1153,7 @@ input.menu-search-input {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #8bff06;
+  background: #03ffff;
 }
 .sidebar-nav {
   margin: 0;
@@ -1924,7 +1924,7 @@ h6 {
   margin: 20px 0 10px;
 }
 p {
-  margin: 10px 0;
+  margin: 20px 0;
 }
 a {
   border-bottom-color: #ccc;
