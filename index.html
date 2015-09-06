@@ -216,7 +216,7 @@
 <p>有了这个惊人的算法，支持负载均衡和故障转移，你自豪的去找你的经理。他给一个微笑：“很赞的工作”。</p>
 <p>一致性哈希拯救了你。你欣赏的不仅是这个算法容易实现，而且是它有可扩展性和处理失败这种巨大的能力。</p>
 <p>你上面实现的小算法其实在NoSQL数据库里使用。还有，为了显而易见我在这里已经排除很多东西，但基本思想是一样的。这是学习分布式系统是如何工作的第一步，并且你跨过了这一步。太棒了！</p>
-<p><strong><em>注意：在文章中我们很多次提及用来计算哈希关键字的固定机器ID，这个ID本身是由哈希函数来计算的。如果机器间隔的比较远，那这种技术有时会导致负载不均衡，这意味着一个机器实际上得到负载会大于其他的机器。这实际上可能发生，即使在环上静态分配机器标识。这通常通过引入虚拟节点机制来解决。在这个机制中，我们在环上加入很多虚拟节点，这些虚拟点世界上也是对应那些真实的机器。所以技术上来说，一个机器可以负责环上的多个区间。在种技术在<a href="http://cassandra.apache.org/" target="_blank" rel="external">The Apache Cassandra Project</a>和<a href="http://basho.com/riak/" target="_blank" rel="external">Riak-Basho Technologies</a>中有使用。这里借了一个图来展示。下图看起来很复杂但实际上不是。它仅仅是说这里有4台机器，但是负责32个我们上面提到的那种分区。每段绿色的由机器0处理，橘色的由机器1处理，以此类推。。。</em></strong><br><img src="http://qph.is.quoracdn.net/main-qimg-e87f0e5d5ea0a5d530ed9b083e68db90?convert_to_webp=true" alt="a ring with 32 partitions"></p>
+<p><strong>注意：在文章中我们很多次提及用来计算哈希关键字的固定机器ID，这个ID本身是由哈希函数来计算的。如果机器间隔的比较远，那这种技术有时会导致负载不均衡，这意味着一个机器实际上得到负载会大于其他的机器。这实际上可能发生，即使在环上静态分配机器标识。这通常通过引入虚拟节点机制来解决。在这个机制中，我们在环上加入很多虚拟节点，这些虚拟点世界上也是对应那些真实的机器。所以技术上来说，一个机器可以负责环上的多个区间。在种技术在<a href="http://cassandra.apache.org/" target="_blank" rel="external">The Apache Cassandra Project</a>和<a href="http://basho.com/riak/" target="_blank" rel="external">Riak-Basho Technologies</a>中有使用。这里借了一个图来展示。下图看起来很复杂但实际上不是。它仅仅是说这里有4台机器，但是负责32个我们上面提到的那种分区。每段绿色的由机器0处理，橘色的由机器1处理，以此类推。。。</strong><br><img src="http://qph.is.quoracdn.net/main-qimg-e87f0e5d5ea0a5d530ed9b083e68db90?convert_to_webp=true" alt="a ring with 32 partitions"></p>
 <p>哈希快乐…一致性哈希！！！</p>
 
         
