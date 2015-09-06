@@ -121,6 +121,104 @@
           
           
             
+              <a class="post-title-link" href="/2015/09/06/译-Distributed-Systems-Part-2-Consistency-Versus-Availability-A-Pragmatic-Example/">
+                分布式系统第二部：一致性vs可用性，一个实际的例子
+              </a>
+            
+          
+        </h1>
+      
+
+      <div class="post-meta">
+        <span class="post-time">
+          发表于 2015-09-06
+        </span>
+
+        
+          <span class="post-category">
+            &nbsp; | &nbsp; 分类于
+            
+              <a href="/categories/分布式/">分布式</a>
+
+              
+              
+
+            
+          </span>
+        
+
+        
+          
+            <span class="post-comments-count">
+            &nbsp; | &nbsp;
+            <a href="/2015/09/06/译-Distributed-Systems-Part-2-Consistency-Versus-Availability-A-Pragmatic-Example/#comments" >
+              <span class="post-comments-count ds-thread-count" data-thread-key="2015/09/06/译-Distributed-Systems-Part-2-Consistency-Versus-Availability-A-Pragmatic-Example/"></span>
+            </a>
+          </span>
+          
+        
+      </div>
+    </div>
+
+    <div class="post-body">
+
+      
+      
+
+      
+        
+          <p>翻译自<a href="http://loveforprogramming.quora.com/Distributed-Systems-Part-2-Consistency-versus-Availability-A-Pragmatic-Example" target="_blank" rel="external">LOVE FOR PROGRAMMING</a></p>
+<hr>
+<p>正如我们在这个系列的<a href="http://liusb.github.io/2015/09/04/%E8%AF%91-Distributed-Systems-Part-1-A-peek-into-consistent-hashing/">分布式系统第一部：初探一致性哈希</a>中讨论那样，很难使分布式系统在任何时候都完美的工作。虽然，它具有自我修复能力，但有时我们不得不为了效率和可扩展性来权衡某些重要的特征。我们将在这篇文章中讨论更多相关内容。同样，我们将使用在第一部中开发的分布式系统来解决其他的商业用例。让我们开始吧。</p>
+<p>回想一下，你怎么使用一致性哈希开发了能提供负载均衡和容错的系统。你让键值对分布在各节点中来分发负载。为了实现容错，还将键值对复制到一致性哈希环的前面那个节点。到目前为止,这都能很好的运行。你觉得在世界之巅。</p>
+<p>你老板对你印象非常深刻。看到你的系统使用一致性哈希能够很好的处理规模增长，他想使用你的分布式系统来实现程序的一个关键部分。你的应用随着移动和桌面客户端普及得到了迅速发展。添加商品到购物车作为业务关键部分，他希望客户使用该功能时有极快的体验。他想要你使用你那个20个节点的集群来保存客户购物车数据。</p>
+<p>你当然对此很兴奋，不是吗？但是由于被之前的错误所伤害，你现在更成熟了。有许多问题出现在你的脑海，但现在你问了他三个相关的：</p>
+<blockquote>
+<p>1.我们现在拥有多少用户？他们增长多快？<br>2.他期望的响应延迟是多少？<br>3.这个服务的消费者是谁？并且这个服务需要提供什么操作？</p>
+</blockquote>
+<p>（待续）</p>
+
+        
+      
+    </div>
+
+    <div class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/一致性/"> #一致性 </a>
+          
+            <a href="/tags/分布式/"> #分布式 </a>
+          
+            <a href="/tags/可用性/"> #可用性 </a>
+          
+            <a href="/tags/翻译/"> #翻译 </a>
+          
+        </div>
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </div>
+  </div>
+
+
+    
+      
+
+  <div class="post post-type-normal ">
+    <div class="post-header">
+
+      
+      
+        <h1 class="post-title">
+          
+          
+            
               <a class="post-title-link" href="/2015/09/04/译-Distributed-Systems-Part-1-A-peek-into-consistent-hashing/">
                 分布式系统第一部：初探一致性哈希
               </a>
@@ -232,104 +330,6 @@
             <a href="/tags/分布式/"> #分布式 </a>
           
             <a href="/tags/哈希/"> #哈希 </a>
-          
-            <a href="/tags/翻译/"> #翻译 </a>
-          
-        </div>
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </div>
-  </div>
-
-
-    
-      
-
-  <div class="post post-type-normal ">
-    <div class="post-header">
-
-      
-      
-        <h1 class="post-title">
-          
-          
-            
-              <a class="post-title-link" href="/2015/09/04/译-Distributed-Systems-Part-2-Consistency-Versus-Availability-A-Pragmatic-Example/">
-                分布式系统第二部：一致性vs可用性，一个实际的例子
-              </a>
-            
-          
-        </h1>
-      
-
-      <div class="post-meta">
-        <span class="post-time">
-          发表于 2015-09-04
-        </span>
-
-        
-          <span class="post-category">
-            &nbsp; | &nbsp; 分类于
-            
-              <a href="/categories/分布式/">分布式</a>
-
-              
-              
-
-            
-          </span>
-        
-
-        
-          
-            <span class="post-comments-count">
-            &nbsp; | &nbsp;
-            <a href="/2015/09/04/译-Distributed-Systems-Part-2-Consistency-Versus-Availability-A-Pragmatic-Example/#comments" >
-              <span class="post-comments-count ds-thread-count" data-thread-key="2015/09/04/译-Distributed-Systems-Part-2-Consistency-Versus-Availability-A-Pragmatic-Example/"></span>
-            </a>
-          </span>
-          
-        
-      </div>
-    </div>
-
-    <div class="post-body">
-
-      
-      
-
-      
-        
-          <p>翻译自<a href="http://loveforprogramming.quora.com/Distributed-Systems-Part-2-Consistency-versus-Availability-A-Pragmatic-Example" target="_blank" rel="external">LOVE FOR PROGRAMMING</a></p>
-<hr>
-<p>正如我们在这个系列的<a href="http://liusb.github.io/2015/09/04/%E8%AF%91-Distributed-Systems-Part-1-A-peek-into-consistent-hashing/">分布式系统第一部：初探一致性哈希</a>中讨论那样，很难使分布式系统在任何时候都完美的工作。虽然，它具有自我修复能力，但有时我们不得不为了效率和可扩展性来权衡某些重要的特征。我们将在这篇文章中讨论更多相关内容。同样，我们将使用在第一部中开发的分布式系统来解决其他的商业用例。让我们开始吧。</p>
-<p>回想一下，你怎么使用一致性哈希开发了能提供负载均衡和容错的系统。你让键值对分布在各节点中来分发负载。为了实现容错，还将键值对复制到一致性哈希环的前面那个节点。到目前为止,这都能很好的运行。你觉得在世界之巅。</p>
-<p>你老板对你印象非常深刻。看到你的系统使用一致性哈希能够很好的处理规模增长，他想使用你的分布式系统来实现程序的一个关键部分。你的应用随着移动和桌面客户端普及得到了迅速发展。添加商品到购物车作为业务关键部分，他希望客户使用该功能时有极快的体验。他想要你使用你那个20个节点的集群来保存客户购物车数据。</p>
-<p>你当然对此很兴奋，不是吗？但是由于被之前的错误所伤害，你现在更成熟了。有许多问题出现在你的脑海，但现在你问了他三个相关的：</p>
-<blockquote>
-<p>1.我们现在拥有多少用户？他们增长多快？<br>2.他期望的响应延迟是多少？<br>3.这个服务的消费者是谁？并且这个服务需要提供什么操作？</p>
-</blockquote>
-<p>（待续）</p>
-
-        
-      
-    </div>
-
-    <div class="post-footer">
-      
-        <div class="post-tags">
-          
-            <a href="/tags/一致性/"> #一致性 </a>
-          
-            <a href="/tags/分布式/"> #分布式 </a>
-          
-            <a href="/tags/可用性/"> #可用性 </a>
           
             <a href="/tags/翻译/"> #翻译 </a>
           
