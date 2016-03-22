@@ -1,164 +1,310 @@
 <!doctype html>
-<html class="theme-next use-motion theme-next-mist">
-<head>
+
+
+
   
 
-<meta charset="UTF-8"/>
-<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+
+<html class="theme-next mist use-motion">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
 
 
 
-
-  <link rel="stylesheet" type="text/css" href="/vendors/fancybox/source/jquery.fancybox.css?v=2.1.5"/>
-
-
-<link rel="stylesheet" type="text/css" href="/css/main.css?v=0.4.2"/>
-
-
-    <meta name="description" content="You are more than what you have become now." />
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
 
 
 
-	<meta name="keywords" content="css,html,盒模型," />
 
-  <title> 学习HTML和CSS // Liusb's Blog </title>
+
+
+
+
+
+
+
+
+  <link href="/vendors/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css"/>
+
+
+
+
+  <link href="//fonts.googleapis.com/css?family=Lato:300,400,700,400italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+
+
+
+<link href="/vendors/font-awesome/css/font-awesome.min.css?v=4.4.0" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=0.5.0" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="html,css,盒模型," />
+
+
+
+
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=0.5.0" />
+
+
+
+
+
+
+<meta name="description" content="HTML &amp;amp; CSS文档流(FLOW)在设计页面时，一般先用块级元素构建基本布局，再用内联元素完善各模块内容。尽量使用与内容含义最接近的元素。
+
+块级元素(block)：块级元素在文档流中以行的方式存在，就好像前后有换行符，如div、p之类的元素。此类元素通常用来构建模块。
+内联元素(inline)：内联元素在文档流中总是出现在行内，多个放在一起的内联元素会存在同一个块中，如span可以嵌">
+<meta property="og:type" content="article">
+<meta property="og:title" content="学习HTML和CSS">
+<meta property="og:url" content="http://liusb.github.io/2015/04/16/learning-html-and-css/index.html">
+<meta property="og:site_name" content="Liusb's Blog">
+<meta property="og:description" content="HTML &amp;amp; CSS文档流(FLOW)在设计页面时，一般先用块级元素构建基本布局，再用内联元素完善各模块内容。尽量使用与内容含义最接近的元素。
+
+块级元素(block)：块级元素在文档流中以行的方式存在，就好像前后有换行符，如div、p之类的元素。此类元素通常用来构建模块。
+内联元素(inline)：内联元素在文档流中总是出现在行内，多个放在一起的内联元素会存在同一个块中，如span可以嵌">
+<meta property="og:updated_time" content="2015-09-03T03:23:06.537Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="学习HTML和CSS">
+<meta name="twitter:description" content="HTML &amp;amp; CSS文档流(FLOW)在设计页面时，一般先用块级元素构建基本布局，再用内联元素完善各模块内容。尽量使用与内容含义最接近的元素。
+
+块级元素(block)：块级元素在文档流中以行的方式存在，就好像前后有换行符，如div、p之类的元素。此类元素通常用来构建模块。
+内联元素(inline)：内联元素在文档流中总是出现在行内，多个放在一起的内联元素会存在同一个块中，如span可以嵌">
+
+
+
+<script type="text/javascript" id="hexo.configuration">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    scheme: 'Mist',
+    sidebar: {"position":"right","display":"post"},
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: 0,
+      author: '博主'
+    }
+  };
+</script>
+
+  <title> 学习HTML和CSS | Liusb's Blog </title>
 </head>
 
-<body>
-  <div class="container one-column page-post-detail">
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+
+  <div class="container one-collumn sidebar-position-right page-post-detail ">
     <div class="headband"></div>
 
-    <div id="header" class="header">
-      <div class="header-inner">
-        <h1 class="site-meta">
-  <span class="logo-line-before"><i></i></span>
-  <a href="/" class="brand">
-      <span class="logo">
-        <i class="icon-logo"></i>
-      </span>
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-meta ">
+  
+
+  <div class="custom-logo-site-title">
+    <a href="/"  class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
       <span class="site-title">Liusb's Blog</span>
-  </a>
-  <span class="logo-line-after"><i></i></span>
-</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+  <p class="site-subtitle"></p>
+</div>
 
+<div class="site-nav-toggle">
+  <button>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+  </button>
+</div>
 
-  <ul id="menu" class="menu">
-     
-    
-      
-      <li class="menu-item menu-item-home">
-        <a href="/">
-          <i class="menu-item-icon icon-home"></i> <br />
-          首页
-        </a>
-      </li>
-    
-      
-      <li class="menu-item menu-item-categories">
-        <a href="/categories">
-          <i class="menu-item-icon icon-categories"></i> <br />
-          分类
-        </a>
-      </li>
-    
-      
-      <li class="menu-item menu-item-archives">
-        <a href="/archives">
-          <i class="menu-item-icon icon-archives"></i> <br />
-          归档
-        </a>
-      </li>
-    
-      
-      <li class="menu-item menu-item-tags">
-        <a href="/tags">
-          <i class="menu-item-icon icon-tags"></i> <br />
-          标签
-        </a>
-      </li>
-    
-      
-      <li class="menu-item menu-item-about">
-        <a href="/about">
-          <i class="menu-item-icon icon-about"></i> <br />
-          关于
-        </a>
-      </li>
-    
-  </ul>
+<nav class="site-nav">
+  
 
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-home fa-fw"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories" rel="section">
+            
+              <i class="menu-item-icon fa fa-th fa-fw"></i> <br />
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives" rel="section">
+            
+              <i class="menu-item-icon fa fa-archive fa-fw"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags" rel="section">
+            
+              <i class="menu-item-icon fa fa-tags fa-fw"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about" rel="section">
+            
+              <i class="menu-item-icon fa fa-user fa-fw"></i> <br />
+            
+            关于
+          </a>
+        </li>
+      
 
-      </div>
-    </div>
+      
+    </ul>
+  
 
-    <div id="main" class="main">
+  
+</nav>
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
       <div class="main-inner">
-        <div id="content" class="content">
-          
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
 
   <div id="posts" class="posts-expand">
     
 
-  <div class="post post-type-normal ">
-    <div class="post-header">
+  
+  
 
-      
-      
-        <h1 class="post-title">
-          
-          
-            
-              学习HTML和CSS
-            
-          
-        </h1>
-      
+  
+  
+  
 
-      <div class="post-meta">
-        <span class="post-time">
-          发表于 2015-04-16
-        </span>
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
 
         
-          <span class="post-category">
-            &nbsp; | &nbsp; 分类于
+        
+          <h1 class="post-title" itemprop="name headline">
             
-              <a href="/categories/前端/">前端</a>
+            
+              
+                学习HTML和CSS
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2015-04-16T15:13:49+08:00" content="2015-04-16">
+              2015-04-16
+            </time>
+          </span>
+
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/前端/" itemprop="url" rel="index">
+                    <span itemprop="name">前端</span>
+                  </a>
+                </span>
+
+                
+                
 
               
-              
+            </span>
+          
 
+          
             
-          </span>
-        
-
-        
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/2015/04/16/learning-html-and-css/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2015/04/16/learning-html-and-css/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
           
-            <span class="post-comments-count">
-            &nbsp; | &nbsp;
-            <a href="/2015/04/16/learning-html-and-css/#comments" >
-              <span class="post-comments-count ds-thread-count" data-thread-key="2015/04/16/learning-html-and-css/"></span>
-            </a>
-          </span>
+
           
-        
-      </div>
-    </div>
 
-    <div class="post-body">
+          
+          
+
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
 
       
       
 
       
-        <h1 id="HTML_&amp;_CSS">HTML &amp; CSS</h1><h3 id="文档流(FLOW)">文档流(FLOW)</h3><p>在设计页面时，一般先用块级元素构建基本布局，再用内联元素完善各模块内容。尽量使用与内容含义最接近的元素。</p>
+        <h1 id="HTML-amp-CSS"><a href="#HTML-amp-CSS" class="headerlink" title="HTML &amp; CSS"></a>HTML &amp; CSS</h1><h3 id="文档流-FLOW"><a href="#文档流-FLOW" class="headerlink" title="文档流(FLOW)"></a>文档流(FLOW)</h3><p>在设计页面时，一般先用块级元素构建基本布局，再用内联元素完善各模块内容。尽量使用与内容含义最接近的元素。</p>
 <ul>
 <li>块级元素(block)：块级元素在文档流中以行的方式存在，就好像前后有换行符，如div、p之类的元素。此类元素通常用来构建模块。</li>
 <li>内联元素(inline)：内联元素在文档流中总是出现在行内，多个放在一起的内联元素会存在同一个块中，如span可以嵌套在p元素中。此类元素通常用来标记模块中的部分内容。</li>
 </ul>
 <hr>
-<h3 id="盒模型(BOX_MODEL)">盒模型(BOX MODEL)</h3><p>CSS将每个元素当做一个盒子表示。利用CSS可以对盒子的所有方面进行控制。盒子由内容区和可选的内边距、边框、外边距组成。</p>
+<h3 id="盒模型-BOX-MODEL"><a href="#盒模型-BOX-MODEL" class="headerlink" title="盒模型(BOX MODEL)"></a>盒模型(BOX MODEL)</h3><p>CSS将每个元素当做一个盒子表示。利用CSS可以对盒子的所有方面进行控制。盒子由内容区和可选的内边距、边框、外边距组成。</p>
 <ul>
 <li>内容区(content)：每个元素都有一个内容区，如图像和元素。盒子的大小正好能包含所有的元素，内容区与盒子边缘之间没有空间。</li>
 <li>内边距(padding)：盒子在内容区周围可以有一层内边距，内边距大小是可以设置，是透明的，没有颜色和样式。在默认情况下，有的元素有内边距，有的元素没有。</li>
@@ -167,9 +313,9 @@
 </ul>
 <p>内边距和外边距不能指定样式，只能进行大小设置，但对元素设置背景颜色或背景图片会延伸到内边距部分。边框除了颜色和宽度还有8种样式。此外，还能对边框设置圆角的半径。对于并排放置的两个内联元素，两个元素之间的距离是两个外边距之和。而对于上下放置的两个块元素，两个外边距会折叠在一起，最后形成的外边距是较大的那个外边距。另外，对于两个嵌套的元素外边距也会进行折叠。</p>
 <hr>
-<h3 id="浮动(FLOAT)_&amp;&amp;_清除浮动(CLEAR)">浮动(FLOAT) &amp;&amp; 清除浮动(CLEAR)</h3><p>Float属性设置一个元素向左或者向右进行浮动。<strong>浮动元素必须设置宽度</strong>。浮动的元素会从正常流中删除。浮动元素下面的内联元素会尽可能的绕着它进行流动，块级元素则按照删除该浮动元素之后继续摆放。可以理解为：内联元素直到浮动元素的存在，所以会绕着浮动元素流动，不让浮动元素覆盖自己；而块级元素会忽略浮动元素的存在，则按照浮动元素不存在的方式继续放置。<br>Clear熟悉用来清除浮动。对于设置了clear属性的元素，浏览器在摆放该元素时会查看元素对应位置是否有浮动元素，如果有则将此元素下移直到没有浮动元素覆盖它为止。可以理解为：设置了clear元素后的块级元素不能忽略浮动元素，需要防止浮动元素覆盖自己。</p>
+<h3 id="浮动-FLOAT-amp-amp-清除浮动-CLEAR"><a href="#浮动-FLOAT-amp-amp-清除浮动-CLEAR" class="headerlink" title="浮动(FLOAT) &amp;&amp; 清除浮动(CLEAR)"></a>浮动(FLOAT) &amp;&amp; 清除浮动(CLEAR)</h3><p>Float属性设置一个元素向左或者向右进行浮动。<strong>浮动元素必须设置宽度</strong>。浮动的元素会从正常流中删除。浮动元素下面的内联元素会尽可能的绕着它进行流动，块级元素则按照删除该浮动元素之后继续摆放。可以理解为：内联元素直到浮动元素的存在，所以会绕着浮动元素流动，不让浮动元素覆盖自己；而块级元素会忽略浮动元素的存在，则按照浮动元素不存在的方式继续放置。<br>Clear熟悉用来清除浮动。对于设置了clear属性的元素，浏览器在摆放该元素时会查看元素对应位置是否有浮动元素，如果有则将此元素下移直到没有浮动元素覆盖它为止。可以理解为：设置了clear元素后的块级元素不能忽略浮动元素，需要防止浮动元素覆盖自己。</p>
 <hr>
-<h3 id="元素定位(Element_Position)">元素定位(Element Position)</h3><p>定位的基本思想很简单，它允许你定义元素框相对于其正常位置应该出现的位置，或者相对于父元素、另一个元素甚至浏览器窗口本身的位置。</p>
+<h3 id="元素定位-Element-Position"><a href="#元素定位-Element-Position" class="headerlink" title="元素定位(Element Position)"></a>元素定位(Element Position)</h3><p>定位的基本思想很简单，它允许你定义元素框相对于其正常位置应该出现的位置，或者相对于父元素、另一个元素甚至浏览器窗口本身的位置。</p>
 <p>Positio可以有以前几种值：</p>
 <ul>
 <li>absolute: 生成绝对定位元素，相对于除static以外的第一个父元素进行定位</li>
@@ -178,66 +324,81 @@
 <li>static: 默认值，没有定位，元素在正常的文档流中</li>
 <li>inherit: 从父元素继承position值</li>
 </ul>
-<h5 id="绝对定位(Absolute_Positioning)">绝对定位(Absolute Positioning)</h5><p>要将一个元素进行绝对定位需要设置position熟悉为absolute。一个元素绝对定位时，浏览器要将其从文档流中删除，然后将这个元素按照指定的位置放置。对其他元素不产生任何影响。此外元素有一个z-index属性，此属性指定元素叠放位置，值越大的叠放在上面。</p>
-<h5 id="固定定位(Fixed_Positioning)">固定定位(Fixed Positioning)</h5><p>固定定位的元素是相对浏览器进行位置设定，不管页面滚动与否都会停留在指定位置。</p>
-<h5 id="相对定位(Relative_Positioning)">相对定位(Relative Positioning)</h5><p>相对定位的元素相对相对它原来在文档流中的位置进行定位。</p>
-<h5 id="静态定位(Static_Positioning)">静态定位(Static Positioning)</h5><p>位置设置为static的元素，它始终会处于页面流给予的位置，static元素会忽略任何top、bottom、left或right声明。</p>
+<h5 id="绝对定位-Absolute-Positioning"><a href="#绝对定位-Absolute-Positioning" class="headerlink" title="绝对定位(Absolute Positioning)"></a>绝对定位(Absolute Positioning)</h5><p>要将一个元素进行绝对定位需要设置position熟悉为absolute。一个元素绝对定位时，浏览器要将其从文档流中删除，然后将这个元素按照指定的位置放置。对其他元素不产生任何影响。此外元素有一个z-index属性，此属性指定元素叠放位置，值越大的叠放在上面。</p>
+<h5 id="固定定位-Fixed-Positioning"><a href="#固定定位-Fixed-Positioning" class="headerlink" title="固定定位(Fixed Positioning)"></a>固定定位(Fixed Positioning)</h5><p>固定定位的元素是相对浏览器进行位置设定，不管页面滚动与否都会停留在指定位置。</p>
+<h5 id="相对定位-Relative-Positioning"><a href="#相对定位-Relative-Positioning" class="headerlink" title="相对定位(Relative Positioning)"></a>相对定位(Relative Positioning)</h5><p>相对定位的元素相对相对它原来在文档流中的位置进行定位。</p>
+<h5 id="静态定位-Static-Positioning"><a href="#静态定位-Static-Positioning" class="headerlink" title="静态定位(Static Positioning)"></a>静态定位(Static Positioning)</h5><p>位置设置为static的元素，它始终会处于页面流给予的位置，static元素会忽略任何top、bottom、left或right声明。</p>
 <hr>
-<h3 id="语义(Semantic)">语义(Semantic)</h3><p>HTML的元素、属性和属性值都定义了某种含义，我们不能以它们本身合理的语义之外的方式来使用它们。语义合理的页面具有逻辑性结构、容易维护，并且对数据挖掘服务更加友好。</p>
+<h3 id="语义-Semantic"><a href="#语义-Semantic" class="headerlink" title="语义(Semantic)"></a>语义(Semantic)</h3><p>HTML的元素、属性和属性值都定义了某种含义，我们不能以它们本身合理的语义之外的方式来使用它们。语义合理的页面具有逻辑性结构、容易维护，并且对数据挖掘服务更加友好。</p>
 
       
     </div>
 
-    <div class="post-footer">
+    <div>
+      
+        
+      
+    </div>
+
+    <footer class="post-footer">
       
         <div class="post-tags">
           
-            <a href="/tags/css/"> #css </a>
+            <a href="/tags/html/" rel="tag">#html</a>
           
-            <a href="/tags/html/"> #html </a>
+            <a href="/tags/css/" rel="tag">#css</a>
           
-            <a href="/tags/盒模型/"> #盒模型 </a>
+            <a href="/tags/盒模型/" rel="tag">#盒模型</a>
           
         </div>
       
 
       
         <div class="post-nav">
-          <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2015/09/04/译-Distributed-Systems-Part-1-A-peek-into-consistent-hashing/">分布式系统第一部：初探一致性哈希</a>
+          <div class="post-nav-next post-nav-item">
             
           </div>
 
-          <div class="post-nav-next post-nav-item">
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2015/09/04/译-Distributed-Systems-Part-1-A-peek-into-consistent-hashing/" rel="prev" title="分布式系统第一部：初探一致性哈希">
+                分布式系统第一部：初探一致性哈希 <i class="fa fa-chevron-right"></i>
+              </a>
             
           </div>
         </div>
       
 
       
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
       
     </div>
   </div>
 
 
-
-    
-      <div class="comments" id="comments">
-        
-          <div class="ds-thread" data-thread-key="2015/04/16/learning-html-and-css/"
-               data-title="学习HTML和CSS" data-url="http://liusb.github.io/2015/04/16/learning-html-and-css/">
           </div>
-        
+          
+
+
+          
+  <div class="comments" id="comments">
+    
+      <div class="ds-thread" data-thread-key="2015/04/16/learning-html-and-css/"
+           data-title="学习HTML和CSS" data-url="http://liusb.github.io/2015/04/16/learning-html-and-css/">
       </div>
     
   </div>
 
 
         </div>
-      </div>
-
-      
+        
+          
   
   <div class="sidebar-toggle">
     <div class="sidebar-toggle-line-wrap">
@@ -247,12 +408,14 @@
     </div>
   </div>
 
-  <div id="sidebar" class="sidebar">
+  <aside id="sidebar" class="sidebar">
     <div class="sidebar-inner">
 
       
+
+      
         <ul class="sidebar-nav motion-element">
-          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
             文章目录
           </li>
           <li class="sidebar-nav-overview" data-target="site-overview">
@@ -261,35 +424,41 @@
         </ul>
       
 
-      <div class="site-overview">
-        <div class="site-author motion-element">
-          <img class="site-author-image" src="/images/default_avatar.jpg" alt="liusb" />
-          <p class="site-author-name">liusb</p>
+      <section class="site-overview sidebar-panel ">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="/images/default_avatar.jpg"
+               alt="liusb" />
+          <p class="site-author-name" itemprop="name">liusb</p>
+          <p class="site-description motion-element" itemprop="description">You are more than what you have become now.</p>
         </div>
-        <p class="site-description motion-element">You are more than what you have become now.</p>
-        <div class="site-state motion-element">
+        <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">3</span>
+              <span class="site-state-item-count">4</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
 
-          <div class="site-state-item site-state-categories">
-            <a href="/categories">
-              <span class="site-state-item-count">2</span>
-              <span class="site-state-item-name">分类</span>
+          
+            <div class="site-state-item site-state-categories">
+              <a href="/categories">
+                <span class="site-state-item-count">4</span>
+                <span class="site-state-item-name">分类</span>
               </a>
-          </div>
+            </div>
+          
 
-          <div class="site-state-item site-state-tags">
-            <a href="/tags">
-              <span class="site-state-item-count">10</span>
-              <span class="site-state-item-name">标签</span>
+          
+            <div class="site-state-item site-state-tags">
+              <a href="/tags">
+                <span class="site-state-item-count">14</span>
+                <span class="site-state-item-name">标签</span>
               </a>
-          </div>
+            </div>
+          
 
-        </div>
+        </nav>
 
         
 
@@ -297,64 +466,93 @@
           
             
               <span class="links-of-author-item">
-              <a href="https://github.com/liusb" target="_blank">GitHub</a>
-            </span>
+                <a href="https://github.com/liusb" target="_blank">
+                  
+                    <i class="fa fa-github"></i> GitHub
+                  
+                </a>
+              </span>
             
               <span class="links-of-author-item">
-              <a href="http://www.douban.com/people/60728406/" target="_blank">DouBan</a>
-            </span>
+                <a href="http://www.douban.com/people/60728406/" target="_blank">
+                  
+                    <i class="fa fa-globe"></i> DouBan
+                  
+                </a>
+              </span>
             
               <span class="links-of-author-item">
-              <a href="http://www.zhihu.com/people/keyd" target="_blank">ZhiHu</a>
-            </span>
+                <a href="http://www.zhihu.com/people/keyd" target="_blank">
+                  
+                    <i class="fa fa-globe"></i> ZhiHu
+                  
+                </a>
+              </span>
             
               <span class="links-of-author-item">
-              <a href="https://www.quora.com/Shaobo-Liu-2" target="_blank">Quora</a>
-            </span>
+                <a href="https://www.quora.com/Shaobo-Liu-2" target="_blank">
+                  
+                    <i class="fa fa-globe"></i> Quora
+                  
+                </a>
+              </span>
             
           
         </div>
 
         
         
-          <div class="cc-license motion-element">
+          <div class="cc-license motion-element" itemprop="license">
             <a href="http://creativecommons.org/licenses/by-nc-sa/4.0" class="cc-opacity" target="_blank">
               <img src="/images/cc-by-nc-sa.svg" alt="Creative Commons" />
             </a>
           </div>
         
 
-      </div>
+        
+        <div class="links-of-blogroll motion-element">
+          
+        </div>
+
+      </section>
 
       
-        <div class="post-toc-wrap sidebar-panel-active">
-          <div class="post-toc-indicator-top post-toc-indicator"></div>
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc-indicator-top post-toc-indicator">
+            <i class="fa fa-angle-double-up"></i>
+          </div>
           <div class="post-toc">
             
+              
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#HTML_&_CSS"><span class="nav-number">1.</span> <span class="nav-text">HTML & CSS</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#文档流(FLOW)"><span class="nav-number">1.0.1.</span> <span class="nav-text">文档流(FLOW)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#盒模型(BOX_MODEL)"><span class="nav-number">1.0.2.</span> <span class="nav-text">盒模型(BOX MODEL)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#浮动(FLOAT)_&&_清除浮动(CLEAR)"><span class="nav-number">1.0.3.</span> <span class="nav-text">浮动(FLOAT) && 清除浮动(CLEAR)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#元素定位(Element_Position)"><span class="nav-number">1.0.4.</span> <span class="nav-text">元素定位(Element Position)</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#绝对定位(Absolute_Positioning)"><span class="nav-number">1.0.4.0.1.</span> <span class="nav-text">绝对定位(Absolute Positioning)</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#固定定位(Fixed_Positioning)"><span class="nav-number">1.0.4.0.2.</span> <span class="nav-text">固定定位(Fixed Positioning)</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#相对定位(Relative_Positioning)"><span class="nav-number">1.0.4.0.3.</span> <span class="nav-text">相对定位(Relative Positioning)</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#静态定位(Static_Positioning)"><span class="nav-number">1.0.4.0.4.</span> <span class="nav-text">静态定位(Static Positioning)</span></a></li></ol></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#语义(Semantic)"><span class="nav-number">1.0.5.</span> <span class="nav-text">语义(Semantic)</span></a></li></ol></li></ol></li></ol></div>
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#HTML-amp-CSS"><span class="nav-number">1.</span> <span class="nav-text">HTML & CSS</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#文档流-FLOW"><span class="nav-number">1.0.1.</span> <span class="nav-text">文档流(FLOW)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#盒模型-BOX-MODEL"><span class="nav-number">1.0.2.</span> <span class="nav-text">盒模型(BOX MODEL)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#浮动-FLOAT-amp-amp-清除浮动-CLEAR"><span class="nav-number">1.0.3.</span> <span class="nav-text">浮动(FLOAT) && 清除浮动(CLEAR)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#元素定位-Element-Position"><span class="nav-number">1.0.4.</span> <span class="nav-text">元素定位(Element Position)</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#绝对定位-Absolute-Positioning"><span class="nav-number">1.0.4.0.1.</span> <span class="nav-text">绝对定位(Absolute Positioning)</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#固定定位-Fixed-Positioning"><span class="nav-number">1.0.4.0.2.</span> <span class="nav-text">固定定位(Fixed Positioning)</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#相对定位-Relative-Positioning"><span class="nav-number">1.0.4.0.3.</span> <span class="nav-text">相对定位(Relative Positioning)</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#静态定位-Static-Positioning"><span class="nav-number">1.0.4.0.4.</span> <span class="nav-text">静态定位(Static Positioning)</span></a></li></ol></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#语义-Semantic"><span class="nav-number">1.0.5.</span> <span class="nav-text">语义(Semantic)</span></a></li></ol></li></ol></li></ol></div>
             
           </div>
-          <div class="post-toc-indicator-bottom post-toc-indicator"></div>
-        </div>
+          <div class="post-toc-indicator-bottom post-toc-indicator">
+            <i class="fa fa-angle-double-down"></i>
+          </div>
+        </section>
       
 
     </div>
-  </div>
+  </aside>
 
 
-    </div>
+        
+      </div>
+    </main>
 
-    <div id="footer" class="footer">
+    <footer id="footer" class="footer">
       <div class="footer-inner">
-        <div class="copyright">
+        <div class="copyright" >
   
-  &copy; &nbsp;  2014 - 
-  2015
+  &copy;  2014 - 
+  <span itemprop="copyrightYear">2016</span>
   <span class="with-love">
-    <i class="icon-heart"></i>
+    <i class="fa fa-heart"></i>
   </span>
-  <span class="author">liusb</span>
+  <span class="author" itemprop="copyrightHolder">liusb</span>
 </div>
 
 <div class="powered-by">
@@ -371,389 +569,56 @@
 
 
       </div>
-    </div>
+    </footer>
 
-    <div class="back-to-top"></div>
+    <div class="back-to-top">
+      <i class="fa fa-arrow-up"></i>
+    </div>
   </div>
+
+  
+
+
+  
+
+
+
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
 
   <script type="text/javascript" src="/vendors/jquery/index.js?v=2.1.3"></script>
 
-  
-  
+  <script type="text/javascript" src="/vendors/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
 
-  
-  <script type="text/javascript" src="/vendors/fancybox/source/jquery.fancybox.pack.js"></script>
-  <script type="text/javascript">
-    $(document).ready(function() {
-      $('.content img').each(function () {
-        var $image = $(this);
-        var $imageWrapLink = $image.parent('a');
-
-        if ($imageWrapLink.size() < 1) {
-          $imageWrapLink = $image.wrap('<a href="' + this.getAttribute('src') + '"></a>').parent('a');
-        }
-        $imageWrapLink.addClass('fancybox');
-      });
-    });
-    $('.fancybox').fancybox({
-      helpers: {
-        overlay: {
-          locked: false
-        }
-      }
-    });
-  </script>
-
-
-  <script type="text/javascript">
-  function hasMobileUA () {
-    var nav = window.navigator;
-    var ua = nav.userAgent;
-    var pa = /iPad|iPhone|Android|Opera Mini|BlackBerry|webOS|UCWEB|Blazer|PSP|IEMobile|Symbian/g;
-
-    return pa.test(ua);
-  }
-
-  function isDesktop () {
-    return screen.width > 991 && !hasMobileUA();
-  }
-
-  function isTablet () {
-    return screen.width < 992 && screen.width > 767 && hasMobileUA();
-  }
-
-  function isMobile () {
-    return screen.width < 767 && hasMobileUA();
-  }
-
-  function escapeSelector (selector) {
-    return selector.replace(/[!"$%&'()*+,.\/:;<=>?@[\\\]^`{|}~]/g, "\\$&")
-  }
-</script>
-
-  
+  <script type="text/javascript" src="/vendors/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
 
   <script type="text/javascript" src="/vendors/velocity/velocity.min.js"></script>
+
   <script type="text/javascript" src="/vendors/velocity/velocity.ui.min.js"></script>
 
-  <script type="text/javascript" id="motion.global">
-  $(document).ready(function () {
-    var body = $('body');
-    var isSidebarVisible = false;
-    var sidebarToggle = $('.sidebar-toggle');
-    var sidebarToggleLine1st = $('.sidebar-toggle-line-first')
-    var sidebarToggleLine2nd = $('.sidebar-toggle-line-middle');
-    var sidebarToggleLine3rd = $('.sidebar-toggle-line-last');
-    var sidebar = $('.sidebar');
-
-    var SIDEBAR_WIDTH = '320px';
-    var SIDEBAR_DISPLAY_DURATION = 300;
-
-    var sidebarToogleLineStatusInit = {width: '100%', opacity: 1, left: 0, rotateZ: 0, top: 0};
-
-    var sidebarToggleLine1stStatusInit = sidebarToogleLineStatusInit;
-    var sidebarToggleLine1stStatusArrow = {width: '50%', rotateZ: '-45deg', top: '2px'};
-    var sidebarToogleLine1stStatusClose = {width: '100%', rotateZ: '-45deg', top: '5px'};
-
-    var sidebarToggleLine2ndStatusInit = sidebarToogleLineStatusInit;
-    var sidebarToggleLine2ndStatusArrow = {width: '90%'};
-    var sidebarToogleLine2ndStatusClose = {opacity: 0};
-
-    var sidebarToggleLine3rdStatusInit = sidebarToogleLineStatusInit;
-    var sidebarToggleLine3rdStatusArrow = {width: '50%', rotateZ: '45deg', top: '-2px'};
-    var sidebarToogleLine3rdStatusClose = {width: '100%', rotateZ: '45deg', top: '-5px'};
-
-    LogoAndMenuMotion();
-    sidebatToggleMotion();
-    postsListMotion();
-    backToTopMotion();
+  <script type="text/javascript" src="/vendors/fancybox/source/jquery.fancybox.pack.js"></script>
 
 
-    $(document)
-      .on('sidebar.isShowing', function () {
-        isDesktop() && body.velocity(
-          {paddingRight: SIDEBAR_WIDTH},
-          SIDEBAR_DISPLAY_DURATION
-        );
-        sidebarContentMotion();
-      })
-      .on('sidebar.isHiding', function () {});
-
-    function LogoAndMenuMotion() {
-      $.Velocity.RunSequence([
-        { e: $('.brand'), p: { opacity: 1 }, o: { duration: 100 } },
-        { e: $('.logo'), p: { opacity: 1, top: 0 }, o: { duration: 50} },
-        
-        { e: $('.logo-line-before i'), p: { translateX: "100%" }, o: { duration: 500, sequenceQueue: false } },
-        { e: $('.logo-line-after i'), p: { translateX: "-100%" }, o: { duration: 500, sequenceQueue: false } },
-        
-        { e: $('.site-title'), p: { opacity: 1, top: 0 }, o: { duration: 200 } }
-      ]);
-      $('.menu-item').velocity('transition.slideDownIn', {display: null});
-    }
+  
 
 
-    function backToTopMotion () {
-      var b2top = $('.back-to-top');
-      b2top.on('click', function () {
-        body.velocity('scroll');
-      });
-    }
+  <script type="text/javascript" src="/js/src/utils.js?v=0.5.0"></script>
 
-    function sidebarShowMotion () {
-
-      sidebarToggleLine1st.velocity(sidebarToogleLine1stStatusClose);
-      sidebarToggleLine2nd.velocity(sidebarToogleLine2ndStatusClose);
-      sidebarToggleLine3rd.velocity(sidebarToogleLine3rdStatusClose);
-
-      sidebar.velocity({width: SIDEBAR_WIDTH}, {
-        display: 'block',
-        duration: SIDEBAR_DISPLAY_DURATION,
-        complete: function () {
-          sidebar.addClass('sidebar-active');
-          sidebar.trigger('sidebar.didShow');
-        }
-      });
-      sidebar.trigger('sidebar.isShowing');
-    }
-
-    function sidebarHideMotion () {
-      isDesktop() && body.velocity({paddingRight: 0});
-      sidebar.velocity('reverse');
-
-      sidebarToggleLine1st.velocity(sidebarToggleLine1stStatusInit);
-      sidebarToggleLine2nd.velocity(sidebarToggleLine2ndStatusInit);
-      sidebarToggleLine3rd.velocity(sidebarToggleLine3rdStatusInit);
-
-      sidebar.removeClass('sidebar-active');
-      sidebar.trigger('sidebar.isHiding');
-    };
-
-    function sidebarContentMotion () {
-      $('.sidebar .motion-element').velocity(
-        'transition.slideRightIn',
-        {stagger: 50, drag: true}
-      );
-    }
-
-    function postsListMotion () {
-      var postMotionOptions = window.postMotionOptions || {stagger: 300, drag: true};
-      $('.post').velocity('transition.slideDownIn', postMotionOptions);
-    }
-
-    function sidebatToggleMotion () {
-      sidebarToggle.on('click', function () {
-        isSidebarVisible ? sidebarHideMotion() : sidebarShowMotion();
-        isSidebarVisible = !isSidebarVisible;
-      });
-
-      sidebarToggle.hover(function () {
-        if (isSidebarVisible) {return}
-        sidebarToggleLine1st.velocity('stop').velocity(sidebarToggleLine1stStatusArrow);
-        sidebarToggleLine2nd.velocity('stop').velocity(sidebarToggleLine2ndStatusArrow);
-        sidebarToggleLine3rd.velocity('stop').velocity(sidebarToggleLine3rdStatusArrow);
-      }, function () {
-        if (isSidebarVisible) {return}
-        sidebarToggleLine1st.velocity('stop').velocity(sidebarToggleLine1stStatusInit);
-        sidebarToggleLine2nd.velocity('stop').velocity(sidebarToggleLine2ndStatusInit);
-        sidebarToggleLine3rd.velocity('stop').velocity(sidebarToggleLine3rdStatusInit);
-      });
-    }
-  });
-
-</script>
-
-
+  <script type="text/javascript" src="/js/src/motion.js?v=0.5.0"></script>
 
 
 
   
   
-<script type="text/javascript" id="bootstrap.scrollspy.custom">
-  /* ========================================================================
-  * Bootstrap: scrollspy.js v3.3.2
-  * http://getbootstrap.com/javascript/#scrollspy
-  * ========================================================================
-  * Copyright 2011-2015 Twitter, Inc.
-  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
-  * ======================================================================== */
 
-  /**
-   * Custom by iissnan
-   *
-   * - Add a `clear.bs.scrollspy` event.
-   * - Esacpe targets selector.
-   */
-
-
-  +function ($) {
-    'use strict';
-
-    // SCROLLSPY CLASS DEFINITION
-    // ==========================
-
-    function ScrollSpy(element, options) {
-      this.$body          = $(document.body)
-      this.$scrollElement = $(element).is(document.body) ? $(window) : $(element)
-      this.options        = $.extend({}, ScrollSpy.DEFAULTS, options)
-      this.selector       = (this.options.target || '') + ' .nav li > a'
-      this.offsets        = []
-      this.targets        = []
-      this.activeTarget   = null
-      this.scrollHeight   = 0
-
-      this.$scrollElement.on('scroll.bs.scrollspy', $.proxy(this.process, this))
-      this.refresh()
-      this.process()
-    }
-
-    ScrollSpy.VERSION  = '3.3.2'
-
-    ScrollSpy.DEFAULTS = {
-      offset: 10
-    }
-
-    ScrollSpy.prototype.getScrollHeight = function () {
-      return this.$scrollElement[0].scrollHeight || Math.max(this.$body[0].scrollHeight, document.documentElement.scrollHeight)
-    }
-
-    ScrollSpy.prototype.refresh = function () {
-      var that          = this
-      var offsetMethod  = 'offset'
-      var offsetBase    = 0
-
-      this.offsets      = []
-      this.targets      = []
-      this.scrollHeight = this.getScrollHeight()
-
-      if (!$.isWindow(this.$scrollElement[0])) {
-        offsetMethod = 'position'
-        offsetBase   = this.$scrollElement.scrollTop()
-      }
-
-      this.$body
-        .find(this.selector)
-        .map(function () {
-          var $el   = $(this)
-          var href  = $el.data('target') || $el.attr('href')
-          var $href = /^#./.test(href) && $(escapeSelector(href)) // Need to escape selector.
-
-          return ($href
-            && $href.length
-            && $href.is(':visible')
-            && [[$href[offsetMethod]().top + offsetBase, href]]) || null
-        })
-        .sort(function (a, b) { return a[0] - b[0] })
-        .each(function () {
-          that.offsets.push(this[0])
-          that.targets.push(this[1])
-        })
-
-
-    }
-
-    ScrollSpy.prototype.process = function () {
-      var scrollTop    = this.$scrollElement.scrollTop() + this.options.offset
-      var scrollHeight = this.getScrollHeight()
-      var maxScroll    = this.options.offset + scrollHeight - this.$scrollElement.height()
-      var offsets      = this.offsets
-      var targets      = this.targets
-      var activeTarget = this.activeTarget
-      var i
-
-      if (this.scrollHeight != scrollHeight) {
-        this.refresh()
-      }
-
-      if (scrollTop >= maxScroll) {
-        return activeTarget != (i = targets[targets.length - 1]) && this.activate(i)
-      }
-
-      if (activeTarget && scrollTop < offsets[0]) {
-        $(this.selector).trigger('clear.bs.scrollspy')  // Add a custom event.
-        this.activeTarget = null
-        return this.clear()
-      }
-
-      for (i = offsets.length; i--;) {
-        activeTarget != targets[i]
-          && scrollTop >= offsets[i]
-          && (!offsets[i + 1] || scrollTop <= offsets[i + 1])
-          && this.activate(targets[i])
-      }
-    }
-
-    ScrollSpy.prototype.activate = function (target) {
-      this.activeTarget = target
-
-      this.clear()
-
-      var selector = this.selector +
-        '[data-target="' + target + '"],' +
-        this.selector + '[href="' + target + '"]'
-
-      var active = $(selector)
-        .parents('li')
-        .addClass('active')
-
-      if (active.parent('.dropdown-menu').length) {
-        active = active
-          .closest('li.dropdown')
-          .addClass('active')
-      }
-
-      active.trigger('activate.bs.scrollspy')
-    }
-
-    ScrollSpy.prototype.clear = function () {
-      $(this.selector)
-        .parentsUntil(this.options.target, '.active')
-        .removeClass('active')
-    }
-
-
-    // SCROLLSPY PLUGIN DEFINITION
-    // ===========================
-
-    function Plugin(option) {
-      return this.each(function () {
-        var $this   = $(this)
-        var data    = $this.data('bs.scrollspy')
-        var options = typeof option == 'object' && option
-
-        if (!data) $this.data('bs.scrollspy', (data = new ScrollSpy(this, options)))
-        if (typeof option == 'string') data[option]()
-      })
-    }
-
-    var old = $.fn.scrollspy
-
-    $.fn.scrollspy             = Plugin
-    $.fn.scrollspy.Constructor = ScrollSpy
-
-
-    // SCROLLSPY NO CONFLICT
-    // =====================
-
-    $.fn.scrollspy.noConflict = function () {
-      $.fn.scrollspy = old
-      return this
-    }
-
-
-    // SCROLLSPY DATA-API
-    // ==================
-
-    $(window).on('load.bs.scrollspy.data-api', function () {
-      $('[data-spy="scroll"]').each(function () {
-        var $spy = $(this)
-        Plugin.call($spy, $spy.data())
-      })
-    })
-
-  }(jQuery);
-</script>
-
+  
+  
+<script type="text/javascript" src="/js/src/scrollspy.js?v=0.5.0"></script>
 
 <script type="text/javascript" id="sidebar.toc.highlight">
   $(document).ready(function () {
@@ -785,7 +650,6 @@
     }
 
     function getTOCMaxHeight () {
-      var $sidebarInner = $('.sidebar-inner');
       var height = $('.sidebar').height() -
                    $tocSelector.position().top -
                    $('.post-toc-indicator-bottom').height();
@@ -807,7 +671,7 @@
       )
     }
 
-    $(document).on('sidebar.didShow', function () {
+    $(document).on('sidebar.motion.complete', function () {
       processTOC();
     });
 
@@ -824,7 +688,6 @@
       element.on('mousewheel DOMMouseScroll', function (event) {
           var oe = event.originalEvent;
           var delta = oe.wheelDelta || -oe.detail;
-          var self = this;
 
           this.scrollTop += ( delta < 0 ? 1 : -1 ) * 30;
           event.preventDefault();
@@ -834,66 +697,95 @@
     }
 
     function tocOverflowIndicator (indicator, action) {
-      $(indicator).velocity('stop').velocity({
-        opacity: action === 'show' ? 0.4 : 0
-      }, { duration: 100 });
+      var $indicator = $(indicator);
+      var opacity = action === 'show' ? 1 : 0;
+      $indicator.velocity ?
+        $indicator.velocity('stop').velocity({
+          opacity: opacity
+        }, { duration: 100 }) :
+        $indicator.stop().animate({
+          opacity: opacity
+        }, 100);
     }
 
   });
 </script>
 
+<script type="text/javascript" id="sidebar.nav">
+  $(document).ready(function () {
+    var html = $('html');
+    var TAB_ANIMATE_DURATION = 200;
+    var hasVelocity = $.isFunction(html.velocity);
 
-  <script type="text/javascript" id="sidebar.nav">
-    $(document).ready(function () {
-      var html = $('html');
+    $('.sidebar-nav li').on('click', function () {
+      var item = $(this);
+      var activeTabClassName = 'sidebar-nav-active';
+      var activePanelClassName = 'sidebar-panel-active';
+      if (item.hasClass(activeTabClassName)) {
+        return;
+      }
 
-      $('.sidebar-nav li').on('click', function () {
-        var item = $(this);
-        var activeTabClassName = 'sidebar-nav-active';
-        var activePanelClassName = 'sidebar-panel-active';
-        if (item.hasClass(activeTabClassName)) {
-          return;
-        }
+      var currentTarget = $('.' + activePanelClassName);
+      var target = $('.' + item.data('target'));
 
-        var currentTarget = $('.' + activePanelClassName);
-        var target = $('.' + item.data('target'));
-
-        currentTarget.velocity('transition.slideUpOut', 200, function () {
+      hasVelocity ?
+        currentTarget.velocity('transition.slideUpOut', TAB_ANIMATE_DURATION, function () {
           target
             .velocity('stop')
-            .velocity('transition.slideDownIn', 200)
+            .velocity('transition.slideDownIn', TAB_ANIMATE_DURATION)
             .addClass(activePanelClassName);
+        }) :
+        currentTarget.animate({ opacity: 0 }, TAB_ANIMATE_DURATION, function () {
+          currentTarget.hide();
+          target
+            .stop()
+            .css({'opacity': 0, 'display': 'block'})
+            .animate({ opacity: 1 }, TAB_ANIMATE_DURATION, function () {
+              currentTarget.removeClass(activePanelClassName);
+              target.addClass(activePanelClassName);
+            });
         });
 
-        item.siblings().removeClass(activeTabClassName);
-        item.addClass(activeTabClassName);
-      });
+      item.siblings().removeClass(activeTabClassName);
+      item.addClass(activeTabClassName);
+    });
 
-      $('.post-toc a').on('click', function (e) {
-        e.preventDefault();
-        var offset = $(escapeSelector(this.getAttribute('href'))).offset().top;
+    $('.post-toc a').on('click', function (e) {
+      e.preventDefault();
+      var targetSelector = NexT.utils.escapeSelector(this.getAttribute('href'));
+      var offset = $(targetSelector).offset().top;
+      hasVelocity ?
         html.velocity('stop').velocity('scroll', {
           offset: offset  + 'px',
           mobileHA: false
-        });
-      });
-
-      // Expand sidebar on post detail page by default, when post has a toc.
-      var $tocContent = $('.post-toc-content');
-      if ($tocContent.length > 0 && $tocContent.html().trim().length > 0 && isDesktop()) {
-        setTimeout(function () {
-          $('.sidebar-toggle').trigger('click');
-        }, 800);
-      }
+        }) :
+        $('html, body').stop().animate({
+          scrollTop: offset
+        }, 500);
     });
-  </script>
 
+    // Expand sidebar on post detail page by default, when post has a toc.
+    NexT.motion.middleWares.sidebar = function () {
+      var $tocContent = $('.post-toc-content');
+
+      if (CONFIG.sidebar.display === 'post' || CONFIG.sidebar.display === 'always') {
+        if ($tocContent.length > 0 && $tocContent.html().trim().length > 0) {
+          NexT.utils.displaySidebar();
+        }
+      }
+    };
+  });
+</script>
 
 
 
   
 
-  
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=0.5.0"></script>
+
+
+
   
 
   
@@ -905,6 +797,7 @@
     (function() {
       var ds = document.createElement('script');
       ds.type = 'text/javascript';ds.async = true;
+      ds.id = 'duoshuo-script';
       ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
       ds.charset = 'UTF-8';
       (document.getElementsByTagName('head')[0]
@@ -913,8 +806,20 @@
   </script>
 
   
+    
+  
+
+
+
 
 
   
+  
+  
+
+  
+
+  
+
 </body>
 </html>

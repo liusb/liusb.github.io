@@ -1,498 +1,715 @@
 <!doctype html>
-<html class="theme-next use-motion theme-next-mist">
-<head>
+
+
+
   
 
-<meta charset="UTF-8"/>
-<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+
+<html class="theme-next mist use-motion">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
 
 
 
-
-  <link rel="stylesheet" type="text/css" href="/vendors/fancybox/source/jquery.fancybox.css?v=2.1.5"/>
-
-
-<link rel="stylesheet" type="text/css" href="/css/main.css?v=0.4.2"/>
-
-
-    <meta name="description" content="You are more than what you have become now." />
-
-
-
-
-    <meta name="keywords" content="Hexo,next" />
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
 
 
 
 
 
-    <link rel="shorticon icon" type="image/x-icon" href="/favicon.ico?v=0.4.2" />
 
 
 
+
+
+
+
+  <link href="/vendors/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css"/>
+
+
+
+
+  <link href="//fonts.googleapis.com/css?family=Lato:300,400,700,400italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+
+
+
+<link href="/vendors/font-awesome/css/font-awesome.min.css?v=4.4.0" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=0.5.0" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="Hexo, NexT" />
+
+
+
+
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=0.5.0" />
+
+
+
+
+
+
+<meta name="description" content="You are more than what you have become now.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Liusb's Blog">
+<meta property="og:url" content="http://liusb.github.io/index.html">
+<meta property="og:site_name" content="Liusb's Blog">
+<meta property="og:description" content="You are more than what you have become now.">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Liusb's Blog">
+<meta name="twitter:description" content="You are more than what you have become now.">
+
+
+
+<script type="text/javascript" id="hexo.configuration">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    scheme: 'Mist',
+    sidebar: {"position":"right","display":"post"},
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: 0,
+      author: '博主'
+    }
+  };
+</script>
 
   <title> Liusb's Blog </title>
 </head>
 
-<body>
-  <div class="container one-column 
-   page-home 
-">
-    <div class="headband"></div>
-
-    <div id="header" class="header">
-      <div class="header-inner">
-        <h1 class="site-meta">
-  <span class="logo-line-before"><i></i></span>
-  <a href="/" class="brand">
-      <span class="logo">
-        <i class="icon-logo"></i>
-      </span>
-      <span class="site-title">Liusb's Blog</span>
-  </a>
-  <span class="logo-line-after"><i></i></span>
-</h1>
-
-
-  <ul id="menu" class="menu">
-     
-    
-      
-      <li class="menu-item menu-item-home">
-        <a href="/">
-          <i class="menu-item-icon icon-home"></i> <br />
-          首页
-        </a>
-      </li>
-    
-      
-      <li class="menu-item menu-item-categories">
-        <a href="/categories">
-          <i class="menu-item-icon icon-categories"></i> <br />
-          分类
-        </a>
-      </li>
-    
-      
-      <li class="menu-item menu-item-archives">
-        <a href="/archives">
-          <i class="menu-item-icon icon-archives"></i> <br />
-          归档
-        </a>
-      </li>
-    
-      
-      <li class="menu-item menu-item-tags">
-        <a href="/tags">
-          <i class="menu-item-icon icon-tags"></i> <br />
-          标签
-        </a>
-      </li>
-    
-      
-      <li class="menu-item menu-item-about">
-        <a href="/about">
-          <i class="menu-item-icon icon-about"></i> <br />
-          关于
-        </a>
-      </li>
-    
-  </ul>
-
-
-      </div>
-    </div>
-
-    <div id="main" class="main">
-      <div class="main-inner">
-        <div id="content" class="content">
-          
-  <div id="posts" class="posts-expand">
-    
-      
-
-  <div class="post post-type-normal ">
-    <div class="post-header">
-
-      
-      
-        <h1 class="post-title">
-          
-          
-            
-              <a class="post-title-link" href="/2015/09/06/译-Distributed-Systems-Part-2-Consistency-Versus-Availability-A-Pragmatic-Example/">
-                分布式系统第二部：一致性vs可用性，一个实际的例子
-              </a>
-            
-          
-        </h1>
-      
-
-      <div class="post-meta">
-        <span class="post-time">
-          发表于 2015-09-06
-        </span>
-
-        
-          <span class="post-category">
-            &nbsp; | &nbsp; 分类于
-            
-              <a href="/categories/分布式/">分布式</a>
-
-              
-              
-
-            
-          </span>
-        
-
-        
-          
-            <span class="post-comments-count">
-            &nbsp; | &nbsp;
-            <a href="/2015/09/06/译-Distributed-Systems-Part-2-Consistency-Versus-Availability-A-Pragmatic-Example/#comments" >
-              <span class="post-comments-count ds-thread-count" data-thread-key="2015/09/06/译-Distributed-Systems-Part-2-Consistency-Versus-Availability-A-Pragmatic-Example/"></span>
-            </a>
-          </span>
-          
-        
-      </div>
-    </div>
-
-    <div class="post-body">
-
-      
-      
-
-      
-        
-          <p>翻译自<a href="http://loveforprogramming.quora.com/Distributed-Systems-Part-2-Consistency-versus-Availability-A-Pragmatic-Example" target="_blank" rel="external">LOVE FOR PROGRAMMING</a></p>
-<hr>
-<p>正如我们在这个系列的<a href="http://liusb.github.io/2015/09/04/%E8%AF%91-Distributed-Systems-Part-1-A-peek-into-consistent-hashing/">分布式系统第一部：初探一致性哈希</a>中讨论那样，很难使分布式系统在任何时候都完美的工作。虽然，它具有自我修复能力，但有时我们不得不为了效率和可扩展性来权衡某些重要的特征。我们将在这篇文章中讨论更多相关内容。同样，我们将使用在第一部中开发的分布式系统来解决其他的商业用例。让我们开始吧。</p>
-<p>回想一下，你怎么使用一致性哈希开发了能提供负载均衡和容错的系统。你让键值对分布在各节点中来分发负载。为了实现容错，还将键值对复制到一致性哈希环的前面那个节点。到目前为止,这都能很好的运行。你觉得在世界之巅。</p>
-<p>你老板对你印象非常深刻。看到你的系统使用一致性哈希能够很好的处理规模增长，他想使用你的分布式系统来实现程序的一个关键部分。你的应用随着移动和桌面客户端普及得到了迅速发展。添加商品到购物车作为业务关键部分，他希望客户使用该功能时有极快的体验。他想要你使用你那个20个节点的集群来保存客户购物车数据。</p>
-<p>你当然对此很兴奋，不是吗？但是由于被之前的错误所伤害，你现在更成熟了。有许多问题出现在你的脑海，但现在你问了他三个相关的：</p>
-<blockquote>
-<p>1.我们现在拥有多少用户？他们增长多快？<br>2.他期望的响应延迟是多少？<br>3.这个服务的消费者是谁？并且这个服务需要提供什么操作？</p>
-</blockquote>
-<p>[<strong>引人深思的事</strong>:如果你看一下上面的问题：你在问数据大小、支持的操作和期望响应时间。这是你在编写任何算法前应该问的除了其他一些问题外的主要问题]</p>
-<p>他并不太清楚这些问题。他需要时间然后消失了。和平！上面的问题，没有阻止你可视化这个系统的初始设计。你知道你老板想要的是什么。所以你开始思考。为了在第一阶段简化设计，你考虑了你服务可能提供的五个操作：</p>
-<blockquote>
-<p>1.客户可获取购物车商品列表<br>2.客户可添加一个或多个商品到购物车（如没有购物车，则创建一个）<br>3.客户可删除购物车中的一个或多个商品<br>4.客户可更新购物车中的一个或多个商品<br>5.删除购物车</p>
-</blockquote>
-<p>这些都是购物车比较常规的CRUD操作。由于现在这些数据更加关键，所以你必须多加小心。所以你开始考虑用户体验和相关工作流程。你开始可视化通过客户ID存储购物车细节到各个节点上。当对某个特定客户ID的一个新的购物车操作发送过来时，你将使用你已经被证明的一致性哈希算法来将它导航到相关节点，这个节点保存那个客户的购物车明细，并且保持创建/更新/删除的结果。在这个节点更改并持久化购物车数据之前，它将会要求前面那个节点做同样的更改。当所有的操作完成，则通过服务返回客户端调用请求。所以你的服务的简单用户工作流程看起来如下（在现实中这里可能会有些其他组件，但现在我们保持简单点）：<br><img src="http://qph.is.quoracdn.net/main-qimg-0ba81c00fdf3b6fc83bd9651fb3f7523?convert_to_webp=true" alt="service&#39;s simple user workflow"></p>
-<p>当你在考虑这个问题时，你的老板回来了，并回答了您之前提出的问题。快速回转！！</p>
-<blockquote>
-<p>1.我们现在拥有多少用户？他们增长多快？<br>[老板]我们现在有1千万用户，并且每个月大致增长1百万。这个数字会随着向前发展越来越好。<br>2.他期望的响应延迟是多少？<br>[老板]几秒钟<br>3.这个服务的消费者是谁？并且这个服务需要提供什么操作？<br>[老板]消费者可以是内部的也可以是外部的。我们需要支持所有CRUD操作。</p>
-</blockquote>
-<p>坦白的说，关于这些你都已经有了主意，不是吗？你对用户数目做了保守估计。如果你的复制因子为2（1千万×2=2千万记录），如果分布是均匀的，你将会有大概1百万客户记录在各个节点上（包括复制有20个节点）。每个节点将会像现在一样安装10万每个月的速度增加。你看了看数据大小，感觉现在完全能应付，但如果你的应用获得进一步发展，你的数据大小将会大大增加。如果你的数据在某个节点出现负载不平衡，虚拟节点可以帮组你解决它。第二个答案是典型的老板式回答，意思是我们需要尽可能越快越好。</p>
-<p>第三个，除了你已经可视化的那些CRUD操作，剩下的是有点耐人寻味。你寻思他的第三个回答。你想公司可能会权衡选择给外部开发者提供API，所以服务由外部使用者。你立即决定你的服务需要以REST方式暴露，所以内部和外部使用者都可以访问它。非常好。想出操作客户购物车资源的URL是比较容易的。如下就是：</p>
-<blockquote>
-<p>基础URL: api/v1/customers/{customer-id}/carts       [现在你只有一个购物车关联到一个用户]</p>
-<p>GET [获取购物车明细]<br>api/v1/customers/{customer-id}/carts/1</p>
-<p>POST [往购物车添加商品，如果购物车不存在就创建一个<br>api/v1/customers/{customer-id}/carts/1<br>{ 新商品进行有效负载 }</p>
-<p>DELETE [从购物车删除一个商品]<br>api/v1/customers/{customer-id}/carts/1/items/{item-id}</p>
-<p>UPDATE [更新购物车里的商品]<br>api/v1/customers/{customer-id}/carts/1<br>{ 更新商品需要进行有效负载 }</p>
-<p>DELETE [删除购物车]<br>api/v1/customers/{customer-id}/carts/1</p>
-</blockquote>
-<p>[我们会在别的文章中讨论更多REST相关内容。]</p>
-
-        
-      
-    </div>
-
-    <div class="post-footer">
-      
-        <div class="post-tags">
-          
-            <a href="/tags/一致性/"> #一致性 </a>
-          
-            <a href="/tags/分布式/"> #分布式 </a>
-          
-            <a href="/tags/可用性/"> #可用性 </a>
-          
-            <a href="/tags/翻译/"> #翻译 </a>
-          
-        </div>
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </div>
-  </div>
-
-
-    
-      
-
-  <div class="post post-type-normal ">
-    <div class="post-header">
-
-      
-      
-        <h1 class="post-title">
-          
-          
-            
-              <a class="post-title-link" href="/2015/09/04/译-Distributed-Systems-Part-1-A-peek-into-consistent-hashing/">
-                分布式系统第一部：初探一致性哈希
-              </a>
-            
-          
-        </h1>
-      
-
-      <div class="post-meta">
-        <span class="post-time">
-          发表于 2015-09-04
-        </span>
-
-        
-          <span class="post-category">
-            &nbsp; | &nbsp; 分类于
-            
-              <a href="/categories/分布式/">分布式</a>
-
-              
-              
-
-            
-          </span>
-        
-
-        
-          
-            <span class="post-comments-count">
-            &nbsp; | &nbsp;
-            <a href="/2015/09/04/译-Distributed-Systems-Part-1-A-peek-into-consistent-hashing/#comments" >
-              <span class="post-comments-count ds-thread-count" data-thread-key="2015/09/04/译-Distributed-Systems-Part-1-A-peek-into-consistent-hashing/"></span>
-            </a>
-          </span>
-          
-        
-      </div>
-    </div>
-
-    <div class="post-body">
-
-      
-      
-
-      
-        
-          <p>翻译自<a href="http://loveforprogramming.quora.com/Distributed-Systems-Part-1-A-peek-into-consistent-hashing" target="_blank" rel="external">LOVE FOR PROGRAMMING</a></p>
-<hr>
-<p>当人们谈论规模的时候，他们往往是在谈论可扩展的分布式系统。如果你想知道自己在某些地方的认知全是错误的，那么深入分布式吧。不管怎样，关于分布式，你首先要学习的事情就是通过机器有效的进行数据分发或者通过服务器进行有效的负载均衡。我将在这篇文字中讨论前者。像往常一样，我们将从现实的例子开始，然后解决它。让我们开始吧。</p>
-<p>比如说，你老板给你一个文件，这个文件包含很多行，每行有一个IP地址和一个时间戳。IP地址代表客户端地址，时间戳代表对应的客户访问你们网站的时间。这个文件包含10万个这样的组合。时间戳是按升序排列，这意味着倒数第二个记录的时间戳小于倒数第一个的时间戳。下面是个样本格式：</p>
-<blockquote>
-<p>111.111.111.111    2014:02:01:12.0400<br>222.222.222.222    2014:02:01:13.0410<br>333.333.333.333    2014:02:01:14.0500<br>111.111.111.111    2014:02:01:15.0200</p>
-</blockquote>
-<p>你老板希望你能写个算法，这个算法能计算出特定客户IP地址最后访问你们网站的时间。你想到了键值对数据集能够解决它。因为需要重复查找指定的键，能够提供O(1)查找时间的hash-map非常合适解决这个问题。你的老板正看着你，你在心里对使用hash-map的这个想法做了个评估，最后告诉他这样很容易完成这个任务。这是该算法的粗略轮廓：<br>你将会用一个O(n)时间的线性扫描来将这些键值对放到一个map中。由于时间戳是升序的，所以假如遇到了重复的key，就直接用新的时间戳替换key的value。只要这个map准备好，该算法就能够在O(1)时间提供给客户它最近的访问时间。你自豪感爆棚。</p>
-<p>你的老板问了你一个很贴切的问题“你是把数据一直放在内存里吗？”。你肯定的回复他说：由于数据不大，所以放内存里是没有问题的，这样做的结果是几乎能立即查询出结果。他皱了皱眉头然后跟你说：“<strong>内存当前还不是问题，但不能假设他永远不会出问题</strong>”。你思索了一下他说的话，然后明白了他的意思。他指的是公司快速发展的网站以后会产生越来越多的数据，如果你把所有的客户IP都放在内存里，迟早会压垮服务器。你同意他的观点。可扩展性意识悄悄出现。你征求说需要一点时间来考虑这个问题，他点头答应然后消失了。和平！！</p>
-<hr>
-<p>现在你开始思考这个问题，基于你的数据结构的知识，你认为你给出了这个时间复杂度为O(1)的解决方案是最好的，然而不幸的是这个方案存在明显的问题。你想象有一个1亿行的文件，然后你的头开始旋转。你考虑LRU缓存机制，然后又否定它，因为出现一个缓存命中失败就会很麻烦（需要记住1亿记录在一个单独的机器中），并且我们希望有一个非常快的查询。但是呢，你是问题解决者。你觉得将数据放入hash-map的方法是不错的，但是内存是个问题。为什么不把数据放到多个机器上呢？每个机器保持一部分有限的数据就可以非常快速的访问。这是个不错的策略并且看起来可行。</p>
-<p>但是首要的问题是找到数据分发到这些机器的规则。你手头有10台机器可以使用。你又想象有1亿的数据，然后每台机器就能处理1000万条数据。你还认为拥有相同IP的数据应该分发到同一台机器。你想到哈希，你最好的朋友。IP地址串能够哈希成一个数字，随后被映射到对应的机器。由于你有10台机器，为了避免过载，你需要对这个关键字对机器数进行取模。你得到了你的哈希算法：</p>
-<blockquote>
-<p>IP地址 =&gt; 哈希数字 =&gt; 哈希数字%机器数 =&gt; 关键字对应的机器编号</p>
-</blockquote>
-<p>例如，111.111.111.111 =&gt; 994968954 =&gt; 994968954%10 =&gt; 4。所以111.111.111.111应该分发到第一台机器。</p>
-<p>非常棒！你全力去实现这个算法。你用sockets写了一个小的后台服务，并在每台机器上运行。你同样写了一个轻量的服务接口，这个服务接受一个key，使用上面的算法计算出这个key，将key对应的数据分发到对应的服务器，然后与提取数据的服务器建立通信通道。为了写入一个新行，程序同样要调用类似的服务接口，传入关键字(该行中的IP地址)和需要负载的数据(这个例子中就是该行中的时间戳)，随后附加到目标机器的文件尾。由于每台机器存储的浏览记录相对来说比较少，你在返回数据时用LRU缓存[固定大小]来缓存它。这样即使出现缓存命中失败也不会碍事。非常好！！一切都搞定了，然后你想你老板展示了你的解决方案。</p>
-<p>他很高兴，并问了你几个关于机器失效的问题。你没能回答，然后他让你专注于可扩展性和效率，先不管故障处理和数据复制，至少目前应该这样。你勉强同意。</p>
-<p>你完成了该方案，并部署在10台生产环境的机器上。数据根据key分发过来并保留在对于的机器上，一切运行良好。由于每台机器上的数据减到之前的10分之一，速度令人惊叹。</p>
-<p>自从代码部署到了生产环境，各种事情的发生就像你以前预见一样。你老板找到你并告诉你在各台机器上的数据增长非常快，你需要添加更多机器，否则每台机器将会由于数据集太大而变得非常慢。你同意他的观点。他建议你添加更多机器。你看了看你的算法，现在数据将分发到20台机器，你可能需要将模10改成模20。你老板怀疑地问了一个问题：“那么现有的数据集怎么办？”。</p>
-<p>你看到了问题所在，现在这些关键字将映射到新的数字，而且读取操作将被发送到新的机器，新机器上的数据可能不正确。你很忧虑。现在最好的解决方案就是将这10台机器上的数据重新分发到20台机器上。你老板问道，这样重新分发需要多少时间？你回答他：“小于一个小时，但是网站在这段时间将不能访问”。你老板皱起眉头。</p>
-<p>你被困在一个难堪的局面。你征求说需要一点时间来考虑这个问题，他点头答应然后消失了。和平！！</p>
-<hr>
-<p>你认为如果网站继续按目前的速度增长的话，这样的问题可能每个月都会发生。同样我们还没有考虑故障接管。你向你工作在一个客户快速增长的公司的朋友请教。他直言不讳地说：“你的哈希函数很烂，如果你想横向扩展你的系统的话，你应该看看<strong>一致性哈希</strong>”。你问他：“什么是一致性哈希？”。他开始解释：</p>
-<blockquote>
-<p>“一致性哈希是一种特殊的哈希算法。在使用一致哈希算法后，哈希表槽位数（大小）的改变平均只需要对K/n个关键字重新映射，其中K是关键字的数量，n是槽位数量。然而在传统的哈希表中，添加或删除一个槽位的几乎需要对所有关键字进行重新映射。”。 <a href="https://zh.wikipedia.org/wiki/%E4%B8%80%E8%87%B4%E5%93%88%E5%B8%8C" target="_blank" rel="external">Wikipedia</a></p>
-</blockquote>
-<p>在实战中你已经遇见了上面句子中最后那部分描述的情况。</p>
-<p>为了更好的理解，这里进行更多的解释。假设说你有15个数字(关键字),[1,8,3,7,5,6,4,2,11,15,12,13,14]和3台机器。在这个例子里，你知道关键字的范围是1-15。你分配固定的ID给你的机器，分别为0、5、10。现在的算法就是将关键字对应的数据放到ID小于或等于关键字的机器上（现实中数字范围会很大，这里为了简单起见，我们假设固定在1-15）。所以：</p>
-<blockquote>
-<p>机器0 -&gt; 1, 2, 3, 4<br>机器5 -&gt; 5, 6, 7, 8<br>机器10 -&gt; 11, 12, 13, 14, 15</p>
-</blockquote>
-<p>如果新的关键字到达，例如9，它将放到机器5上面，因为5小于9：</p>
-<blockquote>
-<p>机器5 -&gt; 5, 6, 7, 8, 9</p>
-</blockquote>
-<p>现在考虑这个问题：你现在得到一台机器并想把它添加到集群中。你分配任何一个1-15之间的数字作为该机器的ID。这里假设是7。现在你有4台机器在机器中，然后数据需要重新分发。但细想一下，机器0和10中的数据不受影响，只有机器5中的数据受影响。机器5中只有大于等于7的数据需要重新分发。结果如下：</p>
-<blockquote>
-<p>机器0 -&gt; 1, 2, 3, 4<br>机器5 -&gt; 5, 6<br>机器7 -&gt; 7, 8, 9<br>机器10 -&gt; 11, 12, 13, 14, 15</p>
-</blockquote>
-<p>这可以很好的可视化成一个圆。下面是一个一致性哈希环：<br><img src="http://qph.is.quoracdn.net/main-qimg-b6d3aa38ab452a19dab40a9eacbc3135?convert_to_webp=true" alt="consistent hashing ring"></p>
-<p>恭喜！！你刚刚已经实现了一致性哈希。所以现在，如果你想添加一个新的机器，只需要对环上的某些关键字从之前的机器上重新分发到新机器上。我们已经走过了漫长的道路。</p>
-<p>你向你老板展示了这个新算法，算法令他印象深刻。但是向往常一样，他问了你另一个问题：“能添加节点是很好的，但是如果一个包含数据集的节点发生故障那将会发生什么？”。你思考了一下，看着你的一致性哈希环，很快有了个方案。但是就像往常一下，你征求说需要一点时间来考虑这个问题，他点头答应然后消失了。和平！！</p>
-<hr>
-<p>在这个一致性哈希环中，即使一个机器出故障了，它前面的那个机器将能够很好的处理发送到它的关键字，是不是？例如，7号机器出了故障，哪个机器将会服务关键字8？机器5，对不对？因为当7号机器不在的时候，机器5在环山的关键字8前面。所以，你想啊，为啥不在前一个机器上保存当前机上关键字的一个副本？假如当前机器出现故障，那前一个机器就会救了我们。使用专业术语来说，就是我们设定重复因子为1，这样万一故障出现，我们至少会有1个节点拥有备份的数据。这非常简单。所以画了个新图（看起来有点乱，请忍受一下）。正如你所看到的，现在0号机器保存了一份机器5关键字的副本。所以每次关键字发生到机器5，都会被复制到机器0。其他机器也做类似处理。<br><img src="http://qph.is.quoracdn.net/main-qimg-ab8cab2b44a9e31d236cf117a2cc0cd5?convert_to_webp=true" alt="Machine Cluster"></p>
-<p>现在你有串联方式工作的机集群。关键字被分布在机器中，即使其中一个出现故障时，它前面的机器将接替它工作。因此，集群不仅支持负载均衡，还支持切换。这太棒了！！</p>
-<p>有了这个惊人的算法，支持负载均衡和故障转移，你自豪的去找你的经理。他给一个微笑：“很赞的工作”。</p>
-<p>一致性哈希拯救了你。你欣赏的不仅是这个算法容易实现，而且是它有可扩展性和处理失败这种巨大的能力。</p>
-<p>你上面实现的小算法其实在NoSQL数据库里使用。还有，为了显而易见我在这里已经排除很多东西，但基本思想是一样的。这是学习分布式系统是如何工作的第一步，并且你跨过了这一步。太棒了！</p>
-<p><strong>注意：在文章中我们很多次提及用来计算哈希关键字的固定机器ID，这个ID本身是由哈希函数来计算的。如果机器间隔的比较远，那这种技术有时会导致负载不均衡，这意味着一个机器实际上得到负载会大于其他的机器。这实际上可能发生，即使在环上静态分配机器标识。这通常通过引入虚拟节点机制来解决。在这个机制中，我们在环上加入很多虚拟节点，这些虚拟点世界上也是对应那些真实的机器。所以技术上来说，一个机器可以负责环上的多个区间。在种技术在<a href="http://cassandra.apache.org/" target="_blank" rel="external">The Apache Cassandra Project</a>和<a href="http://basho.com/riak/" target="_blank" rel="external">Riak-Basho Technologies</a>中有使用。这里借了一个图来展示。下图看起来很复杂但实际上不是。它仅仅是说这里有4台机器，但是负责32个我们上面提到的那种分区。每段绿色的由机器0处理，橘色的由机器1处理，以此类推。。。</strong><br><img src="http://qph.is.quoracdn.net/main-qimg-e87f0e5d5ea0a5d530ed9b083e68db90?convert_to_webp=true" alt="a ring with 32 partitions"></p>
-<p>哈希快乐…一致性哈希！！！</p>
-
-        
-      
-    </div>
-
-    <div class="post-footer">
-      
-        <div class="post-tags">
-          
-            <a href="/tags/一致性/"> #一致性 </a>
-          
-            <a href="/tags/分布式/"> #分布式 </a>
-          
-            <a href="/tags/哈希/"> #哈希 </a>
-          
-            <a href="/tags/翻译/"> #翻译 </a>
-          
-        </div>
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </div>
-  </div>
-
-
-    
-      
-
-  <div class="post post-type-normal ">
-    <div class="post-header">
-
-      
-      
-        <h1 class="post-title">
-          
-          
-            
-              <a class="post-title-link" href="/2015/04/16/learning-html-and-css/">
-                学习HTML和CSS
-              </a>
-            
-          
-        </h1>
-      
-
-      <div class="post-meta">
-        <span class="post-time">
-          发表于 2015-04-16
-        </span>
-
-        
-          <span class="post-category">
-            &nbsp; | &nbsp; 分类于
-            
-              <a href="/categories/前端/">前端</a>
-
-              
-              
-
-            
-          </span>
-        
-
-        
-          
-            <span class="post-comments-count">
-            &nbsp; | &nbsp;
-            <a href="/2015/04/16/learning-html-and-css/#comments" >
-              <span class="post-comments-count ds-thread-count" data-thread-key="2015/04/16/learning-html-and-css/"></span>
-            </a>
-          </span>
-          
-        
-      </div>
-    </div>
-
-    <div class="post-body">
-
-      
-      
-
-      
-        
-          <h1 id="HTML_&amp;_CSS">HTML &amp; CSS</h1><h3 id="文档流(FLOW)">文档流(FLOW)</h3><p>在设计页面时，一般先用块级元素构建基本布局，再用内联元素完善各模块内容。尽量使用与内容含义最接近的元素。</p>
-<ul>
-<li>块级元素(block)：块级元素在文档流中以行的方式存在，就好像前后有换行符，如div、p之类的元素。此类元素通常用来构建模块。</li>
-<li>内联元素(inline)：内联元素在文档流中总是出现在行内，多个放在一起的内联元素会存在同一个块中，如span可以嵌套在p元素中。此类元素通常用来标记模块中的部分内容。</li>
-</ul>
-<hr>
-<h3 id="盒模型(BOX_MODEL)">盒模型(BOX MODEL)</h3><p>CSS将每个元素当做一个盒子表示。利用CSS可以对盒子的所有方面进行控制。盒子由内容区和可选的内边距、边框、外边距组成。</p>
-<ul>
-<li>内容区(content)：每个元素都有一个内容区，如图像和元素。盒子的大小正好能包含所有的元素，内容区与盒子边缘之间没有空间。</li>
-<li>内边距(padding)：盒子在内容区周围可以有一层内边距，内边距大小是可以设置，是透明的，没有颜色和样式。在默认情况下，有的元素有内边距，有的元素没有。</li>
-<li>边框(border)：元素周围可以有一个边框，这个边框会包围内边距。边框可以设置不同的样式、颜色、宽度。提供了从视觉上分离内容的一种手段。</li>
-<li>外边距(margin)：外边距包含着边框，同样是可选的。如果两个盒子紧挨着，那么外边距就相当于它们之间的距离。</li>
-</ul>
-<p>内边距和外边距不能指定样式，只能进行大小设置，但对元素设置背景颜色或背景图片会延伸到内边距部分。边框除了颜色和宽度还有8种样式。此外，还能对边框设置圆角的半径。对于并排放置的两个内联元素，两个元素之间的距离是两个外边距之和。而对于上下放置的两个块元素，两个外边距会折叠在一起，最后形成的外边距是较大的那个外边距。另外，对于两个嵌套的元素外边距也会进行折叠。</p>
-<hr>
-<h3 id="浮动(FLOAT)_&amp;&amp;_清除浮动(CLEAR)">浮动(FLOAT) &amp;&amp; 清除浮动(CLEAR)</h3><p>Float属性设置一个元素向左或者向右进行浮动。<strong>浮动元素必须设置宽度</strong>。浮动的元素会从正常流中删除。浮动元素下面的内联元素会尽可能的绕着它进行流动，块级元素则按照删除该浮动元素之后继续摆放。可以理解为：内联元素直到浮动元素的存在，所以会绕着浮动元素流动，不让浮动元素覆盖自己；而块级元素会忽略浮动元素的存在，则按照浮动元素不存在的方式继续放置。<br>Clear熟悉用来清除浮动。对于设置了clear属性的元素，浏览器在摆放该元素时会查看元素对应位置是否有浮动元素，如果有则将此元素下移直到没有浮动元素覆盖它为止。可以理解为：设置了clear元素后的块级元素不能忽略浮动元素，需要防止浮动元素覆盖自己。</p>
-<hr>
-<h3 id="元素定位(Element_Position)">元素定位(Element Position)</h3><p>定位的基本思想很简单，它允许你定义元素框相对于其正常位置应该出现的位置，或者相对于父元素、另一个元素甚至浏览器窗口本身的位置。</p>
-<p>Positio可以有以前几种值：</p>
-<ul>
-<li>absolute: 生成绝对定位元素，相对于除static以外的第一个父元素进行定位</li>
-<li>fixed: 生成绝对定位元素，相对于浏览器进行定位</li>
-<li>relative: 生成相对定位元素，相对于其正常位置进行定位</li>
-<li>static: 默认值，没有定位，元素在正常的文档流中</li>
-<li>inherit: 从父元素继承position值</li>
-</ul>
-<h5 id="绝对定位(Absolute_Positioning)">绝对定位(Absolute Positioning)</h5><p>要将一个元素进行绝对定位需要设置position熟悉为absolute。一个元素绝对定位时，浏览器要将其从文档流中删除，然后将这个元素按照指定的位置放置。对其他元素不产生任何影响。此外元素有一个z-index属性，此属性指定元素叠放位置，值越大的叠放在上面。</p>
-<h5 id="固定定位(Fixed_Positioning)">固定定位(Fixed Positioning)</h5><p>固定定位的元素是相对浏览器进行位置设定，不管页面滚动与否都会停留在指定位置。</p>
-<h5 id="相对定位(Relative_Positioning)">相对定位(Relative Positioning)</h5><p>相对定位的元素相对相对它原来在文档流中的位置进行定位。</p>
-<h5 id="静态定位(Static_Positioning)">静态定位(Static Positioning)</h5><p>位置设置为static的元素，它始终会处于页面流给予的位置，static元素会忽略任何top、bottom、left或right声明。</p>
-<hr>
-<h3 id="语义(Semantic)">语义(Semantic)</h3><p>HTML的元素、属性和属性值都定义了某种含义，我们不能以它们本身合理的语义之外的方式来使用它们。语义合理的页面具有逻辑性结构、容易维护，并且对数据挖掘服务更加友好。</p>
-
-        
-      
-    </div>
-
-    <div class="post-footer">
-      
-        <div class="post-tags">
-          
-            <a href="/tags/css/"> #css </a>
-          
-            <a href="/tags/html/"> #html </a>
-          
-            <a href="/tags/盒模型/"> #盒模型 </a>
-          
-        </div>
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </div>
-  </div>
-
-
-    
-  </div>
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
 
   
 
-        </div>
-      </div>
+
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+
+  <div class="container one-collumn sidebar-position-right 
+   page-home 
+ ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-meta ">
+  
+
+  <div class="custom-logo-site-title">
+    <a href="/"  class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <span class="site-title">Liusb's Blog</span>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+  <p class="site-subtitle"></p>
+</div>
+
+<div class="site-nav-toggle">
+  <button>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+  </button>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-home fa-fw"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories" rel="section">
+            
+              <i class="menu-item-icon fa fa-th fa-fw"></i> <br />
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives" rel="section">
+            
+              <i class="menu-item-icon fa fa-archive fa-fw"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags" rel="section">
+            
+              <i class="menu-item-icon fa fa-tags fa-fw"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about" rel="section">
+            
+              <i class="menu-item-icon fa fa-user fa-fw"></i> <br />
+            
+            关于
+          </a>
+        </li>
+      
 
       
+    </ul>
+  
+
+  
+</nav>
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+  <section id="posts" class="posts-expand">
+    
+      
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
+                <a class="post-title-link" href="/2015/10/23/Input-Process-for-Hadoop-Mapreduce/" itemprop="url">
+                  Hadoop中MapReduce程序的输入处理
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2015-10-23T10:13:04+08:00" content="2015-10-23">
+              2015-10-23
+            </time>
+          </span>
+
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/hadoop/" itemprop="url" rel="index">
+                    <span itemprop="name">hadoop</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/2015/10/23/Input-Process-for-Hadoop-Mapreduce/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2015/10/23/Input-Process-for-Hadoop-Mapreduce/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+
+          
+          
+
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+          一个典型的MapReduce程序的处理过程如下：12map: (K1, V1) -&gt; list(K2, V2)reduce: (K2, list(V2)) -&gt; list(K3, V3)
+如果不设置mapreduce.inputformat.class，那么会使用TextInputFormat来处理输入。
+抽象类org.apache.hadoop.mapreduce.InputForm
+          ...
+
+          <div class="post-more-link text-center">
+            <a class="btn" href="/2015/10/23/Input-Process-for-Hadoop-Mapreduce/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
+                <a class="post-title-link" href="/2015/09/06/译-Distributed-Systems-Part-2-Consistency-Versus-Availability-A-Pragmatic-Example/" itemprop="url">
+                  分布式系统第二部：一致性vs可用性，一个实际的例子
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2015-09-06T09:30:00+08:00" content="2015-09-06">
+              2015-09-06
+            </time>
+          </span>
+
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/分布式/" itemprop="url" rel="index">
+                    <span itemprop="name">分布式</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/2015/09/06/译-Distributed-Systems-Part-2-Consistency-Versus-Availability-A-Pragmatic-Example/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2015/09/06/译-Distributed-Systems-Part-2-Consistency-Versus-Availability-A-Pragmatic-Example/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+
+          
+          
+
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+          翻译自LOVE FOR PROGRAMMING
+
+正如我们在这个系列的分布式系统第一部：初探一致性哈希中讨论那样，很难使分布式系统在任何时候都完美的工作。虽然，它具有自我修复能力，但有时我们不得不为了效率和可扩展性来权衡某些重要的特征。我们将在这篇文章中讨论更多相关内容。同样，我们将使用在第一部中开发的分布式系统来解决其他的商业用例。让我们开始吧。
+回想一下，你怎么使用一致性哈希开发了能提供负载均
+          ...
+
+          <div class="post-more-link text-center">
+            <a class="btn" href="/2015/09/06/译-Distributed-Systems-Part-2-Consistency-Versus-Availability-A-Pragmatic-Example/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
+                <a class="post-title-link" href="/2015/09/04/译-Distributed-Systems-Part-1-A-peek-into-consistent-hashing/" itemprop="url">
+                  分布式系统第一部：初探一致性哈希
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2015-09-04T09:30:00+08:00" content="2015-09-04">
+              2015-09-04
+            </time>
+          </span>
+
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/分布式/" itemprop="url" rel="index">
+                    <span itemprop="name">分布式</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/2015/09/04/译-Distributed-Systems-Part-1-A-peek-into-consistent-hashing/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2015/09/04/译-Distributed-Systems-Part-1-A-peek-into-consistent-hashing/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+
+          
+          
+
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+          翻译自LOVE FOR PROGRAMMING
+
+当人们谈论规模的时候，他们往往是在谈论可扩展的分布式系统。如果你想知道自己在某些地方的认知全是错误的，那么深入分布式吧。不管怎样，关于分布式，你首先要学习的事情就是通过机器有效的进行数据分发或者通过服务器进行有效的负载均衡。我将在这篇文字中讨论前者。像往常一样，我们将从现实的例子开始，然后解决它。让我们开始吧。
+比如说，你老板给你一个文件，这个文件
+          ...
+
+          <div class="post-more-link text-center">
+            <a class="btn" href="/2015/09/04/译-Distributed-Systems-Part-1-A-peek-into-consistent-hashing/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
+                <a class="post-title-link" href="/2015/04/16/learning-html-and-css/" itemprop="url">
+                  学习HTML和CSS
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2015-04-16T15:13:49+08:00" content="2015-04-16">
+              2015-04-16
+            </time>
+          </span>
+
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/前端/" itemprop="url" rel="index">
+                    <span itemprop="name">前端</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/2015/04/16/learning-html-and-css/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2015/04/16/learning-html-and-css/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+
+          
+          
+
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+          HTML &amp; CSS文档流(FLOW)在设计页面时，一般先用块级元素构建基本布局，再用内联元素完善各模块内容。尽量使用与内容含义最接近的元素。
+
+块级元素(block)：块级元素在文档流中以行的方式存在，就好像前后有换行符，如div、p之类的元素。此类元素通常用来构建模块。
+内联元素(inline)：内联元素在文档流中总是出现在行内，多个放在一起的内联元素会存在同一个块中，如span可以嵌
+          ...
+
+          <div class="post-more-link text-center">
+            <a class="btn" href="/2015/04/16/learning-html-and-css/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+  </section>
+
+  
+
+
+          </div>
+          
+
+
+          
+
+        </div>
+        
+          
   
   <div class="sidebar-toggle">
     <div class="sidebar-toggle-line-wrap">
@@ -502,40 +719,48 @@
     </div>
   </div>
 
-  <div id="sidebar" class="sidebar">
+  <aside id="sidebar" class="sidebar">
     <div class="sidebar-inner">
 
       
 
-      <div class="site-overview">
-        <div class="site-author motion-element">
-          <img class="site-author-image" src="/images/default_avatar.jpg" alt="liusb" />
-          <p class="site-author-name">liusb</p>
+      
+
+      <section class="site-overview sidebar-panel  sidebar-panel-active ">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="/images/default_avatar.jpg"
+               alt="liusb" />
+          <p class="site-author-name" itemprop="name">liusb</p>
+          <p class="site-description motion-element" itemprop="description">You are more than what you have become now.</p>
         </div>
-        <p class="site-description motion-element">You are more than what you have become now.</p>
-        <div class="site-state motion-element">
+        <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">3</span>
+              <span class="site-state-item-count">4</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
 
-          <div class="site-state-item site-state-categories">
-            <a href="/categories">
-              <span class="site-state-item-count">2</span>
-              <span class="site-state-item-name">分类</span>
+          
+            <div class="site-state-item site-state-categories">
+              <a href="/categories">
+                <span class="site-state-item-count">4</span>
+                <span class="site-state-item-name">分类</span>
               </a>
-          </div>
+            </div>
+          
 
-          <div class="site-state-item site-state-tags">
-            <a href="/tags">
-              <span class="site-state-item-count">10</span>
-              <span class="site-state-item-name">标签</span>
+          
+            <div class="site-state-item site-state-tags">
+              <a href="/tags">
+                <span class="site-state-item-count">14</span>
+                <span class="site-state-item-name">标签</span>
               </a>
-          </div>
+            </div>
+          
 
-        </div>
+        </nav>
 
         
 
@@ -543,53 +768,76 @@
           
             
               <span class="links-of-author-item">
-              <a href="https://github.com/liusb" target="_blank">GitHub</a>
-            </span>
+                <a href="https://github.com/liusb" target="_blank">
+                  
+                    <i class="fa fa-github"></i> GitHub
+                  
+                </a>
+              </span>
             
               <span class="links-of-author-item">
-              <a href="http://www.douban.com/people/60728406/" target="_blank">DouBan</a>
-            </span>
+                <a href="http://www.douban.com/people/60728406/" target="_blank">
+                  
+                    <i class="fa fa-globe"></i> DouBan
+                  
+                </a>
+              </span>
             
               <span class="links-of-author-item">
-              <a href="http://www.zhihu.com/people/keyd" target="_blank">ZhiHu</a>
-            </span>
+                <a href="http://www.zhihu.com/people/keyd" target="_blank">
+                  
+                    <i class="fa fa-globe"></i> ZhiHu
+                  
+                </a>
+              </span>
             
               <span class="links-of-author-item">
-              <a href="https://www.quora.com/Shaobo-Liu-2" target="_blank">Quora</a>
-            </span>
+                <a href="https://www.quora.com/Shaobo-Liu-2" target="_blank">
+                  
+                    <i class="fa fa-globe"></i> Quora
+                  
+                </a>
+              </span>
             
           
         </div>
 
         
         
-          <div class="cc-license motion-element">
+          <div class="cc-license motion-element" itemprop="license">
             <a href="http://creativecommons.org/licenses/by-nc-sa/4.0" class="cc-opacity" target="_blank">
               <img src="/images/cc-by-nc-sa.svg" alt="Creative Commons" />
             </a>
           </div>
         
 
-      </div>
+        
+        <div class="links-of-blogroll motion-element">
+          
+        </div>
+
+      </section>
 
       
 
     </div>
-  </div>
+  </aside>
 
 
-    </div>
+        
+      </div>
+    </main>
 
-    <div id="footer" class="footer">
+    <footer id="footer" class="footer">
       <div class="footer-inner">
-        <div class="copyright">
+        <div class="copyright" >
   
-  &copy; &nbsp;  2014 - 
-  2015
+  &copy;  2014 - 
+  <span itemprop="copyrightYear">2016</span>
   <span class="with-love">
-    <i class="icon-heart"></i>
+    <i class="fa fa-heart"></i>
   </span>
-  <span class="author">liusb</span>
+  <span class="author" itemprop="copyrightHolder">liusb</span>
 </div>
 
 <div class="powered-by">
@@ -606,207 +854,62 @@
 
 
       </div>
-    </div>
+    </footer>
 
-    <div class="back-to-top"></div>
+    <div class="back-to-top">
+      <i class="fa fa-arrow-up"></i>
+    </div>
   </div>
+
+  
+
+
+  
+
+
+
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
 
   <script type="text/javascript" src="/vendors/jquery/index.js?v=2.1.3"></script>
 
-  
-  
+  <script type="text/javascript" src="/vendors/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
 
-  
-  <script type="text/javascript" src="/vendors/fancybox/source/jquery.fancybox.pack.js"></script>
-  <script type="text/javascript">
-    $(document).ready(function() {
-      $('.content img').each(function () {
-        var $image = $(this);
-        var $imageWrapLink = $image.parent('a');
-
-        if ($imageWrapLink.size() < 1) {
-          $imageWrapLink = $image.wrap('<a href="' + this.getAttribute('src') + '"></a>').parent('a');
-        }
-        $imageWrapLink.addClass('fancybox');
-      });
-    });
-    $('.fancybox').fancybox({
-      helpers: {
-        overlay: {
-          locked: false
-        }
-      }
-    });
-  </script>
-
-
-  <script type="text/javascript">
-  function hasMobileUA () {
-    var nav = window.navigator;
-    var ua = nav.userAgent;
-    var pa = /iPad|iPhone|Android|Opera Mini|BlackBerry|webOS|UCWEB|Blazer|PSP|IEMobile|Symbian/g;
-
-    return pa.test(ua);
-  }
-
-  function isDesktop () {
-    return screen.width > 991 && !hasMobileUA();
-  }
-
-  function isTablet () {
-    return screen.width < 992 && screen.width > 767 && hasMobileUA();
-  }
-
-  function isMobile () {
-    return screen.width < 767 && hasMobileUA();
-  }
-
-  function escapeSelector (selector) {
-    return selector.replace(/[!"$%&'()*+,.\/:;<=>?@[\\\]^`{|}~]/g, "\\$&")
-  }
-</script>
-
-  
+  <script type="text/javascript" src="/vendors/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
 
   <script type="text/javascript" src="/vendors/velocity/velocity.min.js"></script>
+
   <script type="text/javascript" src="/vendors/velocity/velocity.ui.min.js"></script>
 
-  <script type="text/javascript" id="motion.global">
-  $(document).ready(function () {
-    var body = $('body');
-    var isSidebarVisible = false;
-    var sidebarToggle = $('.sidebar-toggle');
-    var sidebarToggleLine1st = $('.sidebar-toggle-line-first')
-    var sidebarToggleLine2nd = $('.sidebar-toggle-line-middle');
-    var sidebarToggleLine3rd = $('.sidebar-toggle-line-last');
-    var sidebar = $('.sidebar');
-
-    var SIDEBAR_WIDTH = '320px';
-    var SIDEBAR_DISPLAY_DURATION = 300;
-
-    var sidebarToogleLineStatusInit = {width: '100%', opacity: 1, left: 0, rotateZ: 0, top: 0};
-
-    var sidebarToggleLine1stStatusInit = sidebarToogleLineStatusInit;
-    var sidebarToggleLine1stStatusArrow = {width: '50%', rotateZ: '-45deg', top: '2px'};
-    var sidebarToogleLine1stStatusClose = {width: '100%', rotateZ: '-45deg', top: '5px'};
-
-    var sidebarToggleLine2ndStatusInit = sidebarToogleLineStatusInit;
-    var sidebarToggleLine2ndStatusArrow = {width: '90%'};
-    var sidebarToogleLine2ndStatusClose = {opacity: 0};
-
-    var sidebarToggleLine3rdStatusInit = sidebarToogleLineStatusInit;
-    var sidebarToggleLine3rdStatusArrow = {width: '50%', rotateZ: '45deg', top: '-2px'};
-    var sidebarToogleLine3rdStatusClose = {width: '100%', rotateZ: '45deg', top: '-5px'};
-
-    LogoAndMenuMotion();
-    sidebatToggleMotion();
-    postsListMotion();
-    backToTopMotion();
+  <script type="text/javascript" src="/vendors/fancybox/source/jquery.fancybox.pack.js"></script>
 
 
-    $(document)
-      .on('sidebar.isShowing', function () {
-        isDesktop() && body.velocity(
-          {paddingRight: SIDEBAR_WIDTH},
-          SIDEBAR_DISPLAY_DURATION
-        );
-        sidebarContentMotion();
-      })
-      .on('sidebar.isHiding', function () {});
-
-    function LogoAndMenuMotion() {
-      $.Velocity.RunSequence([
-        { e: $('.brand'), p: { opacity: 1 }, o: { duration: 100 } },
-        { e: $('.logo'), p: { opacity: 1, top: 0 }, o: { duration: 50} },
-        
-        { e: $('.logo-line-before i'), p: { translateX: "100%" }, o: { duration: 500, sequenceQueue: false } },
-        { e: $('.logo-line-after i'), p: { translateX: "-100%" }, o: { duration: 500, sequenceQueue: false } },
-        
-        { e: $('.site-title'), p: { opacity: 1, top: 0 }, o: { duration: 200 } }
-      ]);
-      $('.menu-item').velocity('transition.slideDownIn', {display: null});
-    }
+  
 
 
-    function backToTopMotion () {
-      var b2top = $('.back-to-top');
-      b2top.on('click', function () {
-        body.velocity('scroll');
-      });
-    }
+  <script type="text/javascript" src="/js/src/utils.js?v=0.5.0"></script>
 
-    function sidebarShowMotion () {
-
-      sidebarToggleLine1st.velocity(sidebarToogleLine1stStatusClose);
-      sidebarToggleLine2nd.velocity(sidebarToogleLine2ndStatusClose);
-      sidebarToggleLine3rd.velocity(sidebarToogleLine3rdStatusClose);
-
-      sidebar.velocity({width: SIDEBAR_WIDTH}, {
-        display: 'block',
-        duration: SIDEBAR_DISPLAY_DURATION,
-        complete: function () {
-          sidebar.addClass('sidebar-active');
-          sidebar.trigger('sidebar.didShow');
-        }
-      });
-      sidebar.trigger('sidebar.isShowing');
-    }
-
-    function sidebarHideMotion () {
-      isDesktop() && body.velocity({paddingRight: 0});
-      sidebar.velocity('reverse');
-
-      sidebarToggleLine1st.velocity(sidebarToggleLine1stStatusInit);
-      sidebarToggleLine2nd.velocity(sidebarToggleLine2ndStatusInit);
-      sidebarToggleLine3rd.velocity(sidebarToggleLine3rdStatusInit);
-
-      sidebar.removeClass('sidebar-active');
-      sidebar.trigger('sidebar.isHiding');
-    };
-
-    function sidebarContentMotion () {
-      $('.sidebar .motion-element').velocity(
-        'transition.slideRightIn',
-        {stagger: 50, drag: true}
-      );
-    }
-
-    function postsListMotion () {
-      var postMotionOptions = window.postMotionOptions || {stagger: 300, drag: true};
-      $('.post').velocity('transition.slideDownIn', postMotionOptions);
-    }
-
-    function sidebatToggleMotion () {
-      sidebarToggle.on('click', function () {
-        isSidebarVisible ? sidebarHideMotion() : sidebarShowMotion();
-        isSidebarVisible = !isSidebarVisible;
-      });
-
-      sidebarToggle.hover(function () {
-        if (isSidebarVisible) {return}
-        sidebarToggleLine1st.velocity('stop').velocity(sidebarToggleLine1stStatusArrow);
-        sidebarToggleLine2nd.velocity('stop').velocity(sidebarToggleLine2ndStatusArrow);
-        sidebarToggleLine3rd.velocity('stop').velocity(sidebarToggleLine3rdStatusArrow);
-      }, function () {
-        if (isSidebarVisible) {return}
-        sidebarToggleLine1st.velocity('stop').velocity(sidebarToggleLine1stStatusInit);
-        sidebarToggleLine2nd.velocity('stop').velocity(sidebarToggleLine2ndStatusInit);
-        sidebarToggleLine3rd.velocity('stop').velocity(sidebarToggleLine3rdStatusInit);
-      });
-    }
-  });
-
-</script>
+  <script type="text/javascript" src="/js/src/motion.js?v=0.5.0"></script>
 
 
 
-
-
+  
   
 
   
 
   
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=0.5.0"></script>
+
+
+
   
 
   
@@ -818,6 +921,7 @@
     (function() {
       var ds = document.createElement('script');
       ds.type = 'text/javascript';ds.async = true;
+      ds.id = 'duoshuo-script';
       ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
       ds.charset = 'UTF-8';
       (document.getElementsByTagName('head')[0]
@@ -826,8 +930,20 @@
   </script>
 
   
+    
+  
+
+
+
 
 
   
+  
+  
+
+  
+
+  
+
 </body>
 </html>
