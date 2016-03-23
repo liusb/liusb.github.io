@@ -41,7 +41,7 @@
 <link href="/css/main.css?v=0.5.0" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="html,css,盒模型," />
+  <meta name="keywords" content="机器学习,特征工程,特征选择," />
 
 
 
@@ -57,25 +57,22 @@
 
 
 
-<meta name="description" content="HTML &amp;amp; CSS文档流(FLOW)在设计页面时，一般先用块级元素构建基本布局，再用内联元素完善各模块内容。尽量使用与内容含义最接近的元素。
-
-块级元素(block)：块级元素在文档流中以行的方式存在，就好像前后有换行符，如div、p之类的元素。此类元素通常用来构建模块。
-内联元素(inline)：内联元素在文档流中总是出现在行内，多个放在一起的内联元素会存在同一个块中，如span可以嵌">
+<meta name="description" content="特征工程之特征选择特征选择是特征工程的一部分。特征选择主要解决我们应该使用哪些特征来训练预测模型的问题。选择特征往往需要特定领域知识，但有时候也可以通过某些方法自动选择出和问题相关度大的那些特征。
+特征选择与降维特征选择不同于降维，虽然他们都寻求减少数据集中属性的数量，但是降维主要是通过组合多个属性到一个属性来达到降维，而特征选择只是从特征中选择属性却并不改变属性。
+降维的方法包括：主成分分析(P">
 <meta property="og:type" content="article">
-<meta property="og:title" content="学习HTML和CSS">
-<meta property="og:url" content="http://liusb.github.io/2015/04/16/learning-html-and-css/index.html">
+<meta property="og:title" content="特征工程-特征选择介绍">
+<meta property="og:url" content="http://liusb.github.io/2015/11/04/An-Introduction-to-Feature-Selection/index.html">
 <meta property="og:site_name" content="Liusb's Blog">
-<meta property="og:description" content="HTML &amp;amp; CSS文档流(FLOW)在设计页面时，一般先用块级元素构建基本布局，再用内联元素完善各模块内容。尽量使用与内容含义最接近的元素。
-
-块级元素(block)：块级元素在文档流中以行的方式存在，就好像前后有换行符，如div、p之类的元素。此类元素通常用来构建模块。
-内联元素(inline)：内联元素在文档流中总是出现在行内，多个放在一起的内联元素会存在同一个块中，如span可以嵌">
-<meta property="og:updated_time" content="2015-09-03T03:23:06.537Z">
+<meta property="og:description" content="特征工程之特征选择特征选择是特征工程的一部分。特征选择主要解决我们应该使用哪些特征来训练预测模型的问题。选择特征往往需要特定领域知识，但有时候也可以通过某些方法自动选择出和问题相关度大的那些特征。
+特征选择与降维特征选择不同于降维，虽然他们都寻求减少数据集中属性的数量，但是降维主要是通过组合多个属性到一个属性来达到降维，而特征选择只是从特征中选择属性却并不改变属性。
+降维的方法包括：主成分分析(P">
+<meta property="og:updated_time" content="2016-03-23T07:29:28.867Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="学习HTML和CSS">
-<meta name="twitter:description" content="HTML &amp;amp; CSS文档流(FLOW)在设计页面时，一般先用块级元素构建基本布局，再用内联元素完善各模块内容。尽量使用与内容含义最接近的元素。
-
-块级元素(block)：块级元素在文档流中以行的方式存在，就好像前后有换行符，如div、p之类的元素。此类元素通常用来构建模块。
-内联元素(inline)：内联元素在文档流中总是出现在行内，多个放在一起的内联元素会存在同一个块中，如span可以嵌">
+<meta name="twitter:title" content="特征工程-特征选择介绍">
+<meta name="twitter:description" content="特征工程之特征选择特征选择是特征工程的一部分。特征选择主要解决我们应该使用哪些特征来训练预测模型的问题。选择特征往往需要特定领域知识，但有时候也可以通过某些方法自动选择出和问题相关度大的那些特征。
+特征选择与降维特征选择不同于降维，虽然他们都寻求减少数据集中属性的数量，但是降维主要是通过组合多个属性到一个属性来达到降维，而特征选择只是从特征中选择属性却并不改变属性。
+降维的方法包括：主成分分析(P">
 
 
 
@@ -93,7 +90,7 @@
   };
 </script>
 
-  <title> 学习HTML和CSS | Liusb's Blog </title>
+  <title> 特征工程-特征选择介绍 | Liusb's Blog </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -233,7 +230,7 @@
             
             
               
-                学习HTML和CSS
+                特征工程-特征选择介绍
               
             
           </h1>
@@ -245,8 +242,8 @@
               <i class="fa fa-calendar-o"></i>
             </span>
             <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2015-04-16T15:13:49+08:00" content="2015-04-16">
-              2015-04-16
+            <time itemprop="dateCreated" datetime="2015-11-04T09:30:00+08:00" content="2015-11-04">
+              2015-11-04
             </time>
           </span>
 
@@ -259,8 +256,8 @@
               <span class="post-meta-item-text">分类于</span>
               
                 <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                  <a href="/categories/前端/" itemprop="url" rel="index">
-                    <span itemprop="name">前端</span>
+                  <a href="/categories/机器学习/" itemprop="url" rel="index">
+                    <span itemprop="name">机器学习</span>
                   </a>
                 </span>
 
@@ -275,8 +272,8 @@
             
               <span class="post-comments-count">
                 &nbsp; | &nbsp;
-                <a href="/2015/04/16/learning-html-and-css/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2015/04/16/learning-html-and-css/" itemprop="commentsCount"></span>
+                <a href="/2015/11/04/An-Introduction-to-Feature-Selection/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2015/11/04/An-Introduction-to-Feature-Selection/" itemprop="commentsCount"></span>
                 </a>
               </span>
             
@@ -298,39 +295,40 @@
       
 
       
-        <h1 id="HTML-amp-CSS"><a href="#HTML-amp-CSS" class="headerlink" title="HTML &amp; CSS"></a>HTML &amp; CSS</h1><h3 id="文档流-FLOW"><a href="#文档流-FLOW" class="headerlink" title="文档流(FLOW)"></a>文档流(FLOW)</h3><p>在设计页面时，一般先用块级元素构建基本布局，再用内联元素完善各模块内容。尽量使用与内容含义最接近的元素。</p>
+        <h1 id="特征工程之特征选择"><a href="#特征工程之特征选择" class="headerlink" title="特征工程之特征选择"></a>特征工程之特征选择</h1><p>特征选择是特征工程的一部分。特征选择主要解决我们应该使用哪些特征来训练预测模型的问题。选择特征往往需要特定领域知识，但有时候也可以通过某些方法自动选择出和问题相关度大的那些特征。</p>
+<h2 id="特征选择与降维"><a href="#特征选择与降维" class="headerlink" title="特征选择与降维"></a>特征选择与降维</h2><p>特征选择不同于<strong>降维</strong>，虽然他们都寻求减少数据集中属性的数量，但是降维主要是通过组合多个属性到一个属性来达到降维，而特征选择只是从特征中选择属性却并不改变属性。</p>
+<p>降维的方法包括：主成分分析(Principal Component Analysis)、奇异值分解(Singular Value Decomposition)、Sammon映射(Sammon’s Mapping)。这些方法另外讲解。</p>
+<h2 id="特征选择的目的"><a href="#特征选择的目的" class="headerlink" title="特征选择的目的"></a>特征选择的目的</h2><p>在机器学习实际应用中，特征数量往往较多，其中可能存在不相关的特征，特征之间也可能相互依赖。特征越多训练时间越长，模型也会越复杂。特征选择能剔除不相关或者冗余的数据，达到以下目的：</p>
 <ul>
-<li>块级元素(block)：块级元素在文档流中以行的方式存在，就好像前后有换行符，如div、p之类的元素。此类元素通常用来构建模块。</li>
-<li>内联元素(inline)：内联元素在文档流中总是出现在行内，多个放在一起的内联元素会存在同一个块中，如span可以嵌套在p元素中。此类元素通常用来标记模块中的部分内容。</li>
+<li>减少过拟合：去掉冗余的数据可以减少数据中的噪音</li>
+<li>增加正确率：减少误导性数据会提高模型正确率</li>
+<li>减少训练时间：数据更少模型训练更快</li>
+<li>简化模型：选择真正相关的特征简化模型，易于理解</li>
 </ul>
-<hr>
-<h3 id="盒模型-BOX-MODEL"><a href="#盒模型-BOX-MODEL" class="headerlink" title="盒模型(BOX MODEL)"></a>盒模型(BOX MODEL)</h3><p>CSS将每个元素当做一个盒子表示。利用CSS可以对盒子的所有方面进行控制。盒子由内容区和可选的内边距、边框、外边距组成。</p>
+<h2 id="特征选择的一般过程"><a href="#特征选择的一般过程" class="headerlink" title="特征选择的一般过程"></a>特征选择的一般过程</h2><p>特征选择一般先从特征全集中产生一个特征子集，然后用评价函数对该特征子集进行评价，评价的结果与停止准则进行比较，若评价结果比停止准则好就停止，否则就继续产生下一组特征子集，继续进行特征选择。选出来的特征子集一般还要验证其有效性。</p>
+<h3 id="产生过程"><a href="#产生过程" class="headerlink" title="产生过程"></a>产生过程</h3><p>产生过程是搜索特征子空间的过程。搜索算法分为完全搜索、启发式搜索、随机搜索三大类。</p>
 <ul>
-<li>内容区(content)：每个元素都有一个内容区，如图像和元素。盒子的大小正好能包含所有的元素，内容区与盒子边缘之间没有空间。</li>
-<li>内边距(padding)：盒子在内容区周围可以有一层内边距，内边距大小是可以设置，是透明的，没有颜色和样式。在默认情况下，有的元素有内边距，有的元素没有。</li>
-<li>边框(border)：元素周围可以有一个边框，这个边框会包围内边距。边框可以设置不同的样式、颜色、宽度。提供了从视觉上分离内容的一种手段。</li>
-<li>外边距(margin)：外边距包含着边框，同样是可选的。如果两个盒子紧挨着，那么外边距就相当于它们之间的距离。</li>
+<li>完全搜索：广度优先搜索、分支限界搜索、定向搜索和最优优先搜索。</li>
+<li>启发式搜索：序列前向选择、序列后向选择、双向搜索、增L去R选择算法、序列浮动选择、决策树。</li>
+<li>随机算法：随机产生序列选择算法、模拟退火算法、遗传算法。<h3 id="评价函数"><a href="#评价函数" class="headerlink" title="评价函数"></a>评价函数</h3>见特征选择算法</li>
 </ul>
-<p>内边距和外边距不能指定样式，只能进行大小设置，但对元素设置背景颜色或背景图片会延伸到内边距部分。边框除了颜色和宽度还有8种样式。此外，还能对边框设置圆角的半径。对于并排放置的两个内联元素，两个元素之间的距离是两个外边距之和。而对于上下放置的两个块元素，两个外边距会折叠在一起，最后形成的外边距是较大的那个外边距。另外，对于两个嵌套的元素外边距也会进行折叠。</p>
-<hr>
-<h3 id="浮动-FLOAT-amp-amp-清除浮动-CLEAR"><a href="#浮动-FLOAT-amp-amp-清除浮动-CLEAR" class="headerlink" title="浮动(FLOAT) &amp;&amp; 清除浮动(CLEAR)"></a>浮动(FLOAT) &amp;&amp; 清除浮动(CLEAR)</h3><p>Float属性设置一个元素向左或者向右进行浮动。<strong>浮动元素必须设置宽度</strong>。浮动的元素会从正常流中删除。浮动元素下面的内联元素会尽可能的绕着它进行流动，块级元素则按照删除该浮动元素之后继续摆放。可以理解为：内联元素直到浮动元素的存在，所以会绕着浮动元素流动，不让浮动元素覆盖自己；而块级元素会忽略浮动元素的存在，则按照浮动元素不存在的方式继续放置。<br>Clear熟悉用来清除浮动。对于设置了clear属性的元素，浏览器在摆放该元素时会查看元素对应位置是否有浮动元素，如果有则将此元素下移直到没有浮动元素覆盖它为止。可以理解为：设置了clear元素后的块级元素不能忽略浮动元素，需要防止浮动元素覆盖自己。</p>
-<hr>
-<h3 id="元素定位-Element-Position"><a href="#元素定位-Element-Position" class="headerlink" title="元素定位(Element Position)"></a>元素定位(Element Position)</h3><p>定位的基本思想很简单，它允许你定义元素框相对于其正常位置应该出现的位置，或者相对于父元素、另一个元素甚至浏览器窗口本身的位置。</p>
-<p>Positio可以有以前几种值：</p>
+<h3 id="停止标准"><a href="#停止标准" class="headerlink" title="停止标准"></a>停止标准</h3><h3 id="验证过程"><a href="#验证过程" class="headerlink" title="验证过程"></a>验证过程</h3><h2 id="特征选择算法"><a href="#特征选择算法" class="headerlink" title="特征选择算法"></a>特征选择算法</h2><p>特征选择方法主要按照搜索策略和评价标准进行分类。这里使用基于评价标准进行划分。</p>
+<h3 id="过滤式方法-Filter-Method"><a href="#过滤式方法-Filter-Method" class="headerlink" title="过滤式方法(Filter Method)"></a>过滤式方法(Filter Method)</h3><p>这种方法的主要思想是对各维特征赋予权重，然后依据权重排序，越重要的特征权重越高。<br>主要方法有：</p>
 <ul>
-<li>absolute: 生成绝对定位元素，相对于除static以外的第一个父元素进行定位</li>
-<li>fixed: 生成绝对定位元素，相对于浏览器进行定位</li>
-<li>relative: 生成相对定位元素，相对于其正常位置进行定位</li>
-<li>static: 默认值，没有定位，元素在正常的文档流中</li>
-<li>inherit: 从父元素继承position值</li>
+<li>卡方检验(Chi-squared Test)</li>
+<li>信息增益(Information Gain)</li>
+<li>相关系数(Correlation Coefficient Scores)</li>
 </ul>
-<h5 id="绝对定位-Absolute-Positioning"><a href="#绝对定位-Absolute-Positioning" class="headerlink" title="绝对定位(Absolute Positioning)"></a>绝对定位(Absolute Positioning)</h5><p>要将一个元素进行绝对定位需要设置position熟悉为absolute。一个元素绝对定位时，浏览器要将其从文档流中删除，然后将这个元素按照指定的位置放置。对其他元素不产生任何影响。此外元素有一个z-index属性，此属性指定元素叠放位置，值越大的叠放在上面。</p>
-<h5 id="固定定位-Fixed-Positioning"><a href="#固定定位-Fixed-Positioning" class="headerlink" title="固定定位(Fixed Positioning)"></a>固定定位(Fixed Positioning)</h5><p>固定定位的元素是相对浏览器进行位置设定，不管页面滚动与否都会停留在指定位置。</p>
-<h5 id="相对定位-Relative-Positioning"><a href="#相对定位-Relative-Positioning" class="headerlink" title="相对定位(Relative Positioning)"></a>相对定位(Relative Positioning)</h5><p>相对定位的元素相对相对它原来在文档流中的位置进行定位。</p>
-<h5 id="静态定位-Static-Positioning"><a href="#静态定位-Static-Positioning" class="headerlink" title="静态定位(Static Positioning)"></a>静态定位(Static Positioning)</h5><p>位置设置为static的元素，它始终会处于页面流给予的位置，static元素会忽略任何top、bottom、left或right声明。</p>
-<hr>
-<h3 id="语义-Semantic"><a href="#语义-Semantic" class="headerlink" title="语义(Semantic)"></a>语义(Semantic)</h3><p>HTML的元素、属性和属性值都定义了某种含义，我们不能以它们本身合理的语义之外的方式来使用它们。语义合理的页面具有逻辑性结构、容易维护，并且对数据挖掘服务更加友好。</p>
-
+<h3 id="封装式方法-Wrapper-Method"><a href="#封装式方法-Wrapper-Method" class="headerlink" title="封装式方法(Wrapper Method)"></a>封装式方法(Wrapper Method)</h3><p>这种方法的主要思想是将特征子集的选择当做一个搜索寻优的过程，生成不同的组合，对组合进行评价，再对组合进行比较。<br>主要方法有：</p>
+<ul>
+<li>递归特征消除算法(Recursive Feature Elimination Algorithm)</li>
+</ul>
+<h3 id="Embedded方法"><a href="#Embedded方法" class="headerlink" title="Embedded方法"></a>Embedded方法</h3><p>这种方法的主要思想是在模型训练的过程中，挑选出对模型训练有重要意义的属性。<br>主要方法有：</p>
+<ul>
+<li>岭回归(Rigge Regression)</li>
+</ul>
+<h2 id="特征选择陷阱"><a href="#特征选择陷阱" class="headerlink" title="特征选择陷阱"></a>特征选择陷阱</h2><p>要注意的是选择不同的特征训练出的模型是不同的，特征选择就是模型选择的一部分，所以要先对数据进行分组，即分为训练集和测试集，然后再做特征选择。如果先进行特征选择，那么特征子集在分组后有具有随机性了。</p>
+<h2 id="特征选择清单"><a href="#特征选择清单" class="headerlink" title="特征选择清单"></a>特征选择清单</h2>
       
     </div>
 
@@ -344,11 +342,11 @@
       
         <div class="post-tags">
           
-            <a href="/tags/html/" rel="tag">#html</a>
+            <a href="/tags/机器学习/" rel="tag">#机器学习</a>
           
-            <a href="/tags/css/" rel="tag">#css</a>
+            <a href="/tags/特征工程/" rel="tag">#特征工程</a>
           
-            <a href="/tags/盒模型/" rel="tag">#盒模型</a>
+            <a href="/tags/特征选择/" rel="tag">#特征选择</a>
           
         </div>
       
@@ -357,13 +355,13 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
+              <a href="/2015/10/23/Input-Process-for-Hadoop-Mapreduce/" rel="next" title="Hadoop中MapReduce程序的输入处理">
+                <i class="fa fa-chevron-left"></i> Hadoop中MapReduce程序的输入处理
+              </a>
+            
           </div>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2015/09/04/译-Distributed-Systems-Part-1-A-peek-into-consistent-hashing/" rel="prev" title="分布式系统第一部：初探一致性哈希">
-                分布式系统第一部：初探一致性哈希 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -389,8 +387,8 @@
           
   <div class="comments" id="comments">
     
-      <div class="ds-thread" data-thread-key="2015/04/16/learning-html-and-css/"
-           data-title="学习HTML和CSS" data-url="http://liusb.github.io/2015/04/16/learning-html-and-css/">
+      <div class="ds-thread" data-thread-key="2015/11/04/An-Introduction-to-Feature-Selection/"
+           data-title="特征工程-特征选择介绍" data-url="http://liusb.github.io/2015/11/04/An-Introduction-to-Feature-Selection/">
       </div>
     
   </div>
@@ -526,7 +524,7 @@
               
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#HTML-amp-CSS"><span class="nav-number">1.</span> <span class="nav-text">HTML & CSS</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#文档流-FLOW"><span class="nav-number">1.0.1.</span> <span class="nav-text">文档流(FLOW)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#盒模型-BOX-MODEL"><span class="nav-number">1.0.2.</span> <span class="nav-text">盒模型(BOX MODEL)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#浮动-FLOAT-amp-amp-清除浮动-CLEAR"><span class="nav-number">1.0.3.</span> <span class="nav-text">浮动(FLOAT) && 清除浮动(CLEAR)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#元素定位-Element-Position"><span class="nav-number">1.0.4.</span> <span class="nav-text">元素定位(Element Position)</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#绝对定位-Absolute-Positioning"><span class="nav-number">1.0.4.0.1.</span> <span class="nav-text">绝对定位(Absolute Positioning)</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#固定定位-Fixed-Positioning"><span class="nav-number">1.0.4.0.2.</span> <span class="nav-text">固定定位(Fixed Positioning)</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#相对定位-Relative-Positioning"><span class="nav-number">1.0.4.0.3.</span> <span class="nav-text">相对定位(Relative Positioning)</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#静态定位-Static-Positioning"><span class="nav-number">1.0.4.0.4.</span> <span class="nav-text">静态定位(Static Positioning)</span></a></li></ol></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#语义-Semantic"><span class="nav-number">1.0.5.</span> <span class="nav-text">语义(Semantic)</span></a></li></ol></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#特征工程之特征选择"><span class="nav-number">1.</span> <span class="nav-text">特征工程之特征选择</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#特征选择与降维"><span class="nav-number">1.1.</span> <span class="nav-text">特征选择与降维</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#特征选择的目的"><span class="nav-number">1.2.</span> <span class="nav-text">特征选择的目的</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#特征选择的一般过程"><span class="nav-number">1.3.</span> <span class="nav-text">特征选择的一般过程</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#产生过程"><span class="nav-number">1.3.1.</span> <span class="nav-text">产生过程</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#评价函数"><span class="nav-number">1.3.2.</span> <span class="nav-text">评价函数</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#停止标准"><span class="nav-number">1.3.3.</span> <span class="nav-text">停止标准</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#验证过程"><span class="nav-number">1.3.4.</span> <span class="nav-text">验证过程</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#特征选择算法"><span class="nav-number">1.4.</span> <span class="nav-text">特征选择算法</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#过滤式方法-Filter-Method"><span class="nav-number">1.4.1.</span> <span class="nav-text">过滤式方法(Filter Method)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#封装式方法-Wrapper-Method"><span class="nav-number">1.4.2.</span> <span class="nav-text">封装式方法(Wrapper Method)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Embedded方法"><span class="nav-number">1.4.3.</span> <span class="nav-text">Embedded方法</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#特征选择陷阱"><span class="nav-number">1.5.</span> <span class="nav-text">特征选择陷阱</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#特征选择清单"><span class="nav-number">1.6.</span> <span class="nav-text">特征选择清单</span></a></li></ol></li></ol></div>
             
           </div>
           <div class="post-toc-indicator-bottom post-toc-indicator">
